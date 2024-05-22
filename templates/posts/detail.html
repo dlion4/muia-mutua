@@ -1,0 +1,72 @@
+{% extends "posts/base.html" %}
+{% load static %}
+{% block title %}
+  {{ block.super }}
+  Flexible pricing plans
+{% endblock title %}
+
+{% block post %}
+
+  <div class="col-sm-9 col-md-9 col-lg-9 col-xs-12">
+    <div class="bloggs owl-carousel">
+      <div class="item">
+        <div class="image">
+          <a href="#">
+            <img src="{% static 'images/big/01.jpg' %}" alt="blog-big" title="blog-big" class="img-fluid">
+          </a>
+        </div>
+        <div class="caption">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="icofont icofont-ui-calendar"></i>March 22th, 2024</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="icofont icofont-comment"></i>10</a>
+            </li>
+          </ul>
+          <h3>Photoshop</h3>
+          <h4>How to create Smoke Effect in Photoshop?</h4>
+          <p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et sem, Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu tristique elit.</p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="link">
+      <ul class="list-inline float-start social">
+        <li class="list-inline-item">Share :
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.facebook.com/" target="_blank">
+            <i class="icofont icofont-social-facebook"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://twitter.com/" target="_blank">
+            <i class="icofont icofont-social-twitter"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="list-inline float-end icon">
+        <li class="list-inline-item">Share :
+        </li>
+        <li class="list-inline-item">
+          <a href="#">Online,
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">Course,
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">Tutorials</a>
+        </li>
+      </ul>
+    </div>
+
+    {% include "posts/components/comments.html" %}
+  </div>
+
+{% endblock post %}

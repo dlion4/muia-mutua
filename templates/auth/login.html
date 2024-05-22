@@ -1,0 +1,57 @@
+{% extends "auth/base.html" %}
+
+{% load static %}
+{% load widget_tweaks %}
+
+{% block inner %}
+
+  <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12">
+    <h5>sign in</h5>
+    <hr>
+    <form method="post" action="{% url 'login' %}" enctype="multipart/form-data">
+      {% if form.errors %}
+        <div class="alert alert-danger">
+          <strong>Error!</strong>
+          Your username and password didn't match. Please try again.
+        </div>
+      {% endif %}
+
+      {% csrf_token %}
+      <div class="form-group">
+        <label>{{form.username.label}}*</label>
+        {{ form.username|attr:"placeholder:petermuia@muia.com"|attr:"class:form-control" }}
+      </div>
+      <div class="form-group">
+        <label>{{form.password.label}}*</label>
+        {{ form.password|attr:"placeholder:****************"|attr:"class:form-control" }}
+      </div>
+      <div class="links">
+        <input type="checkbox" id="credit" name="credit" class="checkclass checkbox-inline">
+        <label for="credit" class="text-sm text-muted">Remember me</label>
+        <a href="{% url 'password_reset' %}" class="pull-right">Forgot Password?</a>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block" {% if request.resolver_match.view_name == 'users:signup' %} disabled="disabled" {% endif %}>Login Now</button>
+
+    </form>
+    <div class="or">
+      <span>OR</span>
+      <hr>
+    </div>
+    <ul class="list-unstyled">
+      <li>
+        <a href="https://www.facebook.com/" target="_blank" class="fb">
+          <i class="fa-brands fa-facebook-f"></i>
+          Login Via Facebook</a>
+      </li>
+      <li>
+        <a href="https://twitter.com/" target="_blank" class="tw">
+          <i class="fa-brands fa-twitter"></i>
+          Login Via Twitter</a>
+      </li>
+    </ul>
+    <div class="donot">Don't have an account?
+      <a href="{% url 'users:signup' %}">Create a New Account</a>
+    </div>
+  </div>
+
+{% endblock inner %}

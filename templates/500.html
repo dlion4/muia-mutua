@@ -1,0 +1,20 @@
+<!-- bread-crumb end here -->
+{% block main %}
+  <!-- error start here -->
+  <div class="error">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+          <h2>500</h2>
+          <h5>Server Error</h5>
+          <p>We're sorry, but we colud not process the request at this moment.<br>
+            Try again location.
+          </p>
+          <button type="button" onclick="location.href='{% url 'home' %}'">Back to home
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- error end here -->
+{% endblock main %}

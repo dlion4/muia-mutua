@@ -1,0 +1,18 @@
+<!-- bread-crumb end here -->
+{% block main %}
+  <!-- error start here -->
+  <div class="error">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+          <h2>400</h2>
+          <h5>Bad Request</h5>
+          <p>The request is malformed and could not be processed. Kindly Contact the site owner if the problem persist.</p>
+          <button type="button" onclick="location.href='{% url 'home' %}'">Back to home
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- error end here -->
+{% endblock main %}

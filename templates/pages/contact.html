@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+  {{ block.super }}
+  Conatact Us Page
+{% endblock title %}
+
+{% block main %}
+  <!-- contactus start here -->
+  <div class="contactus">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9 col-md-9 col-lg-9 col-xs-12">
+          <form method="post" enctype="multipart/form-data" class="form-horizontal">
+            <h5>get in touch</h5>
+            <hr>
+
+            <div class="row">
+              <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12">
+                <div class="form-group">
+                  <label>Name*</label>
+                  <input name="name" value="" id="input-name" class="form-control" placeholder="John doe" type="text">
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12">
+                <div class="form-group">
+                  <label>Email*</label>
+                  <input name="email" value="" id="input-email" class="form-control" placeholder="Johndoe@example.com" type="text">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+                <div class="form-group">
+                  <label>Message*</label>
+                  <textarea name="enquiry" id="input-enquiry" class="form-control"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <input class="btn btn-primary" value="Send Message" type="submit">
+          </form>
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3 col-xs-12">
+          <div class="address">
+            <h5>Contact Info</h5>
+            <hr>
+            <p>Nunc quis viverra nibh. Etiam mauris leo, consequat ut tincidunt ac, lobortis consequat ligula.</p>
+            <ul class="list-unstyled">
+              <li>
+                <i class="icofont icofont-home"></i>
+                14/3 Naymilu Owiro Akoko Road, Ludhiana 141001, Kenya.
+              </li>
+              <li>
+                <i class="icofont icofont-phone"></i>
+                +91 123 456 7890
+              </li>
+              <li>
+                <i class="icofont icofont-fax"></i>
+                +00 123 456 7890
+              </li>
+              <li>
+                <i class="icofont icofont-envelope"></i>
+                <a href="#">petermuia@example.com</a>
+              </li>
+              <li>
+                <i class="icofont icofont-globe"></i>
+                <a href="#">www.petermuia.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- contactus end here -->
+  <!-- newsletter start here -->
+  {% include "pages/components/newsletter.html" %}
+  <!-- newsletter end here -->
+{% endblock main %}

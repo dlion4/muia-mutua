@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+  {% load static %}
+  {% load compress %}
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+      {% block title %}Muia Writers{% endblock title %}
+    </title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+    {% comment %} {% compress css %} {% endcomment %}
+    <!-- Bootstrap5.3 stylesheet -->
+    <link href="{% static 'assets/bootstrap5.3/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/dist/css/bootstrap-select.min.css' %}" rel="stylesheet" type="text/css">
+    <!-- font -->
+    <link href="{% static 'css/css' %}?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <!-- icofont -->
+    <link href="{% static 'assets/icofont/css/icofont.css' %}" rel="stylesheet" type="text/css">
+    <!-- fontawesome -->
+    <link href="{% static 'assets/fonts/fontawesome/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <!-- owlcarousel css -->
+    <link href="{% static 'css/owl.carousel.css' %}" rel="stylesheet">
+    <!-- stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+    {% comment %} {% endcompress %} {% endcomment %}
+  </head>
+
+  <body>
+    <!-- top start here -->
+    <div class="top">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+            <ul class="list-inline float-start icon">
+              <li class="list-inline-item">
+                <a href="{% url 'contact' %}">
+                  <i class="icofont icofont-exclamation-circle"></i>Help center</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="{% url 'faqs' %}">
+                  <i class="icofont icofont-support-faq"></i>faq</a>
+              </li>
+              <li class="list-inline-item">
+                <!--language code start here-->
+                <form method="post" enctype="multipart/form-data" id="language">
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-link dropdown-toggle" data-bs-toggle="dropdown" id="languagedrop">
+                      <span class="text">
+                        <i class="icofont icofont-globe"></i>
+                        Lang : English</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languagedrop">
+                      <li class="d-block">
+                        <a class="dropdown-item" href="#"><img src="{% static 'images/flag.jpg' %}" alt="english" title="english" class="img-fluid">
+                          English</a>
+                      </li>
+                    </ul>
+                  </div>
+                </form>
+                <!--language code end here-->
+              </li>
+            </ul>
+            <ul class="list-inline float-end icon">
+              <li class="list-inline-item">
+                <a href="{% url 'login' %}">
+                  <i class="icofont icofont-key"></i>Login</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="{% url 'users:signup' %}">
+                  <i class="icofont icofont-ui-user"></i>
+                  {% if request.user.is_authenticated %}
+                    {{ request.user.email}}
+                  {% else %}
+                    Register
+                  {% endif %}
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--top end here -->
+
+    <!-- header start here-->
+    {% include "components/header.html" %}
+    <!-- header end here -->
+
+    {% block main %}{% endblock main %}
+
+    <!-- footer start here -->
+    {% include "components/footer.html" %}
+    <!-- footer end here -->
+
+    <!-- script start here -->
+    {% comment %} {% compress js %} {% endcomment %}
+    <script src="{% static 'assets/bootstrap5.3/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/bootstrap5.3/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'assets/dist/js/bootstrap-select.min.js' %}"></script>
+    <script src="{% static 'assets/js/owl.carousel.js' %}" type="text/javascript"></script>
+    <script src="{% static 'assets/js/owlinternal.js' %}" type="text/javascript"></script>
+    {% comment %} {% endcompress %} {% endcomment %}
+    <!-- script start here -->
+  </body>
+
+</html>

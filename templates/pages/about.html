@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+  {{ block.super }}
+  About Peter Muia Earnings
+{% endblock title %}
+
+{% block main %}
+  <!-- abouts start here -->
+  <div class="abouts mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12">
+          <p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis feugiat sem. Proin sed blandit lectus. Curabitur luctus molestie nibh, ornare commodo dui tincidunt sed. Maecenas magna risus, varius vitae quam egat, bibendum eleifend dui. Aliquam fringilla dignissim velit, sit amet lobortis elit euismod in. Aenean iaculis ex sagittis ornare tincidunt. Quisque erat elit,congue eget nisl ut, accumsan dapibus dui. Morbi sodales libero tellus, ac aliquet ligula aliquet ut.</p>
+          <ul class="list-unstyled">
+            <li>
+              <i class="icofont icofont-arrow-right"></i>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </li>
+            <li>
+              <i class="icofont icofont-arrow-right"></i>
+              Integer consectetur ligula sed condimentum facilisis.
+            </li>
+            <li>
+              <i class="icofont icofont-arrow-right"></i>
+              Ut pulvinar nunc aliquet luctus vehicula.
+            </li>
+            <li>
+              <i class="icofont icofont-arrow-right"></i>
+              Proin porta lacus id sagittis vulputate.
+            </li>
+            <li>
+              <i class="icofont icofont-arrow-right"></i>
+              Nam vitae lacus dignissim arcu posuere ultricies.
+            </li>
+            <li>
+              <i class="icofont icofont-arrow-right"></i>
+              Mauris malesuada dolor at ligula mollis tempus.
+            </li>
+            <li>
+              <i class="icofont icofont-arrow-right"></i>
+              Nulla efficitur libero non commodo egestas
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12">
+          <div class="image">
+            <img src="{% static 'images/about-img.jpg' %}" class="img-fluid" alt="img" title="img">
+            <div class="icon">
+              <div class="ico">
+                <a href="#">
+                  <i class="icofont icofont-ui-play"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- abouts end here -->
+
+  <!-- inner start here -->
+  <div class="inner">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12 feature">
+          <div class="commontop text-left">
+            <h2>our features</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <hr>
+          </div>
+          <p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...
+            <a href="#">view more</a>
+          </p>
+          <div class="box">
+            <img src="{% static 'images/icon01.png' %}" class="img-fluid" alt="icon" title="icon">
+            <p>Learn Courses online</p>
+            <a href="#">View more</a>
+          </div>
+          <div class="box">
+            <img src="{% static 'images/icon02.png' %}" class="img-fluid" alt="icon" title="icon">
+            <p>Online Library Store</p>
+            <a href="#">View more</a>
+          </div>
+          <img src="{% static 'images/ads.jpg' %}" class="img-fluid" alt="ads" title="ads">
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12 feature">
+          <div class="commontop text-left">
+            <h2>why study best</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <hr>
+          </div>
+          <p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...
+            <a href="#">view more</a>
+          </p>
+
+          <div id="accordion">
+            <div class="card">
+              <h2 id="collapseheading1" class="card-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                  <span>Learn Anything Courses online</span>
+                  <i class="fa fa-minus" aria-hidden="true"></i>
+                </button>
+              </h2>
+              <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="collapseheading1" data-bs-parent="#accordion">
+                <div class="card-body">
+                  <h6>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi...<a href="#">VIEW MORE</a>
+                  </h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h2 class="card-header" id="collapseheading2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                  <span>Basic to Advance Courses?</span>
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
+              </h2>
+              <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="collapseheading2" data-bs-parent="#accordion">
+                <div class="card-body">
+                  <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h2 class="card-header" id="collapseheading3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                  <span>Free Videos Tutorials?</span>
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
+              </h2>
+              <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="collapseheading3" data-bs-parent="#accordion">
+                <div class="card-body">
+                  <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12 feature">
+          <img src="{% static 'images/ads1.jpg' %}" class="img-fluid ad1" alt="ads" title="ads">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- inner end here -->
+
+  <!-- aboutweek start here -->
+  <div class="aboutweek">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+          <div class="box">
+            <div class="caption">
+              <img src="{% static 'images/icon.png' %}" class="img-fluid" alt="img" title="img">
+              <h1>New Student Join Every Week Hurry Up!</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porta semper sagittis. Integer sit amet rhoncus elit.</p>
+            </div>
+            <button type="button">APPLY NOW</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- aboutweek end here -->
+  <!-- service start here -->
+  {% include "pages/components/services.html" %}
+  <!-- service end here -->
+
+  <!-- testimonail start here -->
+  {% include "pages/components/testimonials.html" %}
+  <!-- testimonail end here -->
+
+  <!-- newsletter start here -->
+  {% include "pages/components/newsletter.html" %}
+  <!-- newsletter end here -->
+
+{% endblock main %}

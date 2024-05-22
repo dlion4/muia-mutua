@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+  {{ block.super }}
+  Authentication Page
+{% endblock title %}
+
+{% block main %}
+  <!-- login start here -->
+  <div class="login">
+    <div class="container">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12 justify-content-center align-items-center d-flex">
+        {% block inner %}{% endblock inner %}
+      </div>
+    </div>
+  </div>
+  <!-- login end here -->
+{% endblock main %}

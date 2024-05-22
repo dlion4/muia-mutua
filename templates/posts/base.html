@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+  {{ block.super }}
+  Posts
+{% endblock title %}
+
+{% block main %}
+
+  <!-- blog start here -->
+  <div class="blog-detail">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-md-3 col-lg-3 col-xs-12 hidden-xs">
+          <div class="left">
+            <h4>SEARCH</h4>
+            <div class="search">
+              <form class="form-horizontal" method="post">
+                <fieldset>
+                  <div class="form-group">
+                    <input name="s" value="" class="form-control" placeholder="Search Keyword" type="text">
+                    <button type="submit" value="submit" class="btn">
+                      <i class="icofont icofont-search"></i>
+                    </button>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <div class="left">
+            <h4>CATEGORIES</h4>
+            <div class="filter">
+              <ul class="list-unstyled">
+                <li>
+                  <input type="radio" id="credit" name="credit" class="checkclass checkbox-inline">
+                  <label for="credit" class="checkbox-inline">Credit</label>
+                </li>
+                <li>
+                  <input type="radio" id="courses" name="courses" class="checkclass checkbox-inline">
+                  <label for="courses" class="checkbox-inline">Courses</label>
+                </li>
+                <li>
+                  <input type="radio" id="blogs" name="blogs" class="checkclass checkbox-inline">
+                  <label for="blogs" class="checkbox-inline">Blogs</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="left">
+            <h4>LATEST BLOGS</h4>
+            <div class="popular">
+              <div class="box">
+                <img src="{% static 'images/p1.jpg' %}" class="img-fluid" alt="img" title="img">
+                <p>Introduction to Mobile Application Develop..</p>
+              </div>
+              <div class="box">
+                <img src="{% static 'images/p2.jpg' %}" class="img-fluid" alt="img" title="img">
+                <p>Introduction to PHP Website Development</p>
+              </div>
+              <div class="box">
+                <img src="{% static 'images/p3.jpg' %}" class="img-fluid" alt="img" title="img">
+                <p>Android Application Development</p>
+              </div>
+              <div class="box">
+                <img src="{% static 'images/p1.jpg' %}" class="img-fluid" alt="img" title="img">
+                <p>Introduction to Mobile Application Develop..</p>
+              </div>
+              <div class="box">
+                <img src="{% static 'images/p2.jpg' %}" class="img-fluid" alt="img" title="img">
+                <p>Introduction to PHP Website Development</p>
+              </div>
+            </div>
+          </div>
+          <div class="left">
+            <h4>ARCHIVES</h4>
+            <div class="archive">
+              <div class="form-group">
+                <select id="input-sort" class="form-control selectpicker">
+                  <option value="" selected="selected">Select Month</option>
+                  <option value="">Jan</option>
+                  <option value="">Feb</option>
+                  <option value="">Mar</option>
+                  <option value="">April</option>
+                  <option value="">May</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="left">
+            <h4>TAGS</h4>
+            <div class="tag">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="#">Online</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">Tutorials</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">Video</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">Wordpress Developing</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">Online</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">PHP Developing</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {% block post %}{% endblock post %}
+
+      </div>
+    </div>
+  </div>
+  <!-- blog end here -->
+
+  <!-- newsletter start here -->
+  {% include "pages/components/newsletter.html" %}
+  <!-- newsletter end here -->
+{% endblock main %}

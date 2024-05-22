@@ -1,0 +1,283 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main %}
+
+  <!-- slider start here -->
+  <div class="slide">
+    <div class="slideshow owl-carousel">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+          <img src="{% static 'images/banner.jpg' %}" alt="banner" title="banner" class="img-fluid">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+          <img src="{% static 'images/banner.jpg' %}" alt="banner" title="banner" class="img-fluid">
+        </div>
+      </div>
+    </div>
+
+    <!-- slide-detail start here -->
+    <div class="slide-detail">
+      <div class="container">
+        <div class="matter">
+          <p class="text">Becoming the best content writer</p>
+          <h4>Pathway to financial Freedom as a student</h4>
+          <p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. ut et nulla erat. Nunc lacinia eros neque, eget fringilla dui ullamcorper vitae. vivamus at turpis condimentum.</p>
+        </div>
+        <div class="matter2">
+          <h2>Search</h2>
+          <form class="form-horizontal" method="post">
+            <div class="row">
+              <div class="col-sm-10 col-md-10 col-lg-10 col-xs-12">
+                <div class="row">
+                  <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+                    <div class="form-group">
+                      <select class="custom-select selectpicker" id="location" required="">
+                        <option value="1">Course Categories</option>
+                        <option value="0">Category 1</option>
+                        <option value="0">Category 2</option>
+                        <option value="0">Category 3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+                    <div class="form-group">
+                      <select class="custom-select selectpicker" id="location" required="">
+                        <option value="1">Cost Type</option>
+                        <option value="0">Cost 1</option>
+                        <option value="0">Cost 2</option>
+                        <option value="0">Cost 3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+                    <input name="s" class="form-control" value="" placeholder="Search Text" type="text">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-2 col-md-2 col-lg-2 col-xs-12">
+                <button class="btn-primary" type="button">Search</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- slide-detail end here -->
+  </div>
+  <!-- slider end here -->
+
+  <!-- service start here -->
+  {% include "pages/components/services.html" %}
+  <!-- service end here -->
+
+  <!-- about start here -->
+  <div class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-8 col-lg-8 col-xs-12">
+          <div class="commontop text-left">
+            <h2>About us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br>
+              incididunt ut labore et dolore magna aliqua.</p>
+            <hr>
+          </div>
+          <p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco....
+            <a href="about.html">View more</a>
+          </p>
+          <div class="image">
+            <img src="{% static 'images/about-img.jpg' %}" class="img-fluid" alt="img" title="img">
+            <div class="icon">
+              <div class="ico">
+                <a href="#">
+                  <i class="icofont icofont-ui-play"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12 feature">
+          <div class="commontop text-left">
+            <h2>our features</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <hr>
+          </div>
+          <p class="des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...
+            <a href="about.html">view more</a>
+          </p>
+          <div class="box">
+            <img src="{% static 'images/icon01.png' %}" class="img-fluid" alt="icon" title="icon">
+            <p>Learn Courses online</p>
+            <a href="#">View more</a>
+          </div>
+          <div class="box">
+            <img src="{% static 'images/icon02.png' %}" class="img-fluid" alt="icon" title="icon">
+            <p>Online Library Store</p>
+            <a href="#">View more</a>
+          </div>
+          <img src="{% static 'images/ads.jpg' %}" class="img-fluid" alt="ads" title="ads">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- about end here -->
+
+  <!-- featured start here -->
+  <div class="featured">
+    <div class="image">
+      <img src="{% static 'images/features/bg.jpg' %}" class="img-fluid" alt="bg" title="bg">
+    </div>
+    <div class="inner">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <div class="box">
+                  <div class="icon">
+                    <div class="icons">
+                      <img src="{% static 'images/features/icon1.png' %}" class="img-fluid" alt="image" title="image">
+                    </div>
+                  </div>
+                  <h4>Country Reached</h4>
+                  <p>15</p>
+                </div>
+              </li>
+              <li class="list-inline-item">
+                <div class="box">
+                  <div class="icon">
+                    <div class="icons">
+                      <img src="{% static 'images/features/icon2.png' %}" class="img-fluid" alt="image" title="image">
+                    </div>
+                  </div>
+                  <h4>User Registers</h4>
+                  <p>25k</p>
+                </div>
+              </li>
+              <li class="list-inline-item">
+                <div class="box">
+                  <div class="icon">
+                    <div class="icons">
+                      <img src="{% static 'images/features/icon3.png' %}" class="img-fluid" alt="image" title="image">
+                    </div>
+                  </div>
+                  <h4>Staff Members</h4>
+                  <p>566</p>
+                </div>
+              </li>
+              <li class="list-inline-item">
+                <div class="box">
+                  <div class="icon">
+                    <div class="icons">
+                      <img src="{% static 'images/features/icon4.png' %}" class="img-fluid" alt="image" title="image">
+                    </div>
+                  </div>
+                  <h4>Courses Published</h4>
+                  <p>1150</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- featured end here -->
+
+  <!-- blog start here -->
+  <div class="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+          <div class="commontop text-center">
+            <h2>our blog get up to date with us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <hr>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+          <div class="box">
+            <div class="image">
+              <a href="{% url 'posts:post' 1 %}">
+                <img src="{% static 'images/b1.jpg' %}" class="img-fluid" alt="img" title="img" style="width:100%!important;">
+              </a>
+            </div>
+            <div class="caption">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="icofont icofont-ui-calendar"></i>August 22th, 2017</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="icofont icofont-comment"></i>10</a>
+                </li>
+              </ul>
+              <h3>Photoshop</h3>
+              <h4>How to create Smoke Effect in Photoshop?</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+          <div class="box">
+            <div class="image">
+              <a href="{% url 'posts:post' 2 %}">
+                <img src="{% static 'images/b2.jpg' %}" class="img-fluid" alt="img" title="img" style="width:100%!important;">
+              </a>
+            </div>
+            <div class="caption">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="icofont icofont-ui-calendar"></i>August 28th, 2017</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="icofont icofont-comment"></i>10</a>
+                </li>
+              </ul>
+              <h3>Technology</h3>
+              <h4>How to convert PSD file to HTML file?</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+          <div class="box">
+            <div class="image">
+              <a href="{% url 'posts:post' 3 %}">
+                <img src="{% static 'images/b3.jpg' %}" class="img-fluid" alt="img" title="img" style="width:100%!important;">
+              </a>
+            </div>
+            <div class="caption">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="icofont icofont-ui-calendar"></i>August 30th, 2017</a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="icofont icofont-comment"></i>10</a>
+                </li>
+              </ul>
+              <h3>Marketing</h3>
+              <h4>How to Write Catchy Headlines and Blog Titles Can't Resist</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- blog end here -->
+
+  <!-- testimonail start here -->
+  {% include "pages/components/testimonials.html" %}
+  <!-- testimonail end here -->
+
+  <!-- newsletter start here -->
+  {% include "pages/components/newsletter.html" %}
+  <!-- newsletter end here -->
+
+{% endblock main %}

@@ -1,5 +1,5 @@
 release: python manage.py migrate
 
-web: gunicorn config.wsgi
+web: gunicorn muia.wsgi
 
 heroku buildpacks:set heroku/python

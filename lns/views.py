@@ -1,5 +1,8 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, FormView
+from .models import Contact
+from .froms import ContactForm
+from django.contrib import messages
 
 
 class LandinHomeView(TemplateView):
@@ -10,8 +13,19 @@ class LandinAboutView(TemplateView):
     template_name = "pages/about.html"
 
 
-class LandinContactView(TemplateView):
+class LandinContactView(FormView):
     template_name = "pages/contact.html"
+    form_class = ContactForm
+    success_url = "/contact-us/"
+
+    def form_valid(self, form):
+        instance = form.save(commit=False)
+        if self.request.user.is_authenticated:
+            instance.user = self.request.user
+            instance.save()
+        form.save()
+        messages.success(self.request, "Contact saved successfully")
+        return super().form_valid(form)
 
 
 class LandinPricingView(TemplateView):
@@ -20,4 +34,3 @@ class LandinPricingView(TemplateView):
 
 class LandinFaqsView(TemplateView):
     template_name = "pages/faqs.html"
-

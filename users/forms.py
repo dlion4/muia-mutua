@@ -11,7 +11,7 @@ class UserAdminCreationForm(UserCreationForm):
 
     class Meta(UserCreationForm.Meta):
         model = User
-        fields = ("email",)
+        fields = ("email","full_name","phone_number")
         error_messages = {
             "email": {"unique": "This email has already been taken."},
         }

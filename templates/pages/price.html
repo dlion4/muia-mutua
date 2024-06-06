@@ -7,114 +7,972 @@
 
 {% block main %}
   <!-- priceplan start here -->
-  <div class="priceplan">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
-          <div class="box">
-            <p>FOR WEEK</p>
-            <h4>STARTER</h4>
-            <div class="matter">
-              $60<span>/per week</span>
-            </div>
-            <ul class="list-unstyled">
-              <li>
-                <span>01.</span>
-                Sed Faucibus nisl quis sem
-              </li>
-              <li>
-                <span>02.</span>
-                Integer ut felis ut ante egestas
-              </li>
-              <li>
-                <span>03.</span>
-                Donec et ex eu nibh
-              </li>
-              <li>
-                <span>04.</span>
-                Donec Consequat ex nec finibus
-              </li>
-              <li>
-                <span>05.</span>
-                Integer ut felis ut ante egestas
-              </li>
-            </ul>
-            <div class="text-center">
-              <button type="button">Get it now</button>
-            </div>
-          </div>
+  <style>
+    @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+body {
+	font-family: sans-serif;
+	background: #f6f9fa;
+}
+
+h1 {
+	color: #ccc;
+	text-align: center;
+}
+
+a {
+  color: #ccc;
+  text-decoration: none;
+  outline: none;
+}
+
+/*Fun begins*/
+.tab_container {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 50px;
+	position: relative;
+}
+
+input, section {
+  clear: both;
+  padding-top: 10px;
+  display: none;
+}
+
+label {
+  font-weight: 300;
+  font-size: 14px;
+  display: block;
+  float: left;
+  width: 13%;
+  padding: 1.5em;
+  color: #757575;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  background: #f0f0f0;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab6:checked ~ #content6,
+#tab7:checked ~ #content7,
+#tab5:checked ~ #content5 {
+  display: block;
+  padding: 20px;
+  background: #fff;
+  color: #999;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.tab_container .tab-content p,
+.tab_container .tab-content h3 {
+  -webkit-animation: fadeInScale 0.7s ease-in-out;
+  -moz-animation: fadeInScale 0.7s ease-in-out;
+  animation: fadeInScale 0.7s ease-in-out;
+}
+.tab_container .tab-content h3  {
+  text-align: center;
+}
+
+.tab_container [id^="tab"]:checked + label {
+  background: #fff;
+  box-shadow: inset 0 3px #0CE;
+}
+
+.tab_container [id^="tab"]:checked + label .fa {
+  color: #0CE;
+}
+
+label .fa {
+  font-size: 1.3em;
+  margin: 0 0.4em 0 0;
+}
+
+/*Media query*/
+@media only screen and (max-width: 900px) {
+  label span {
+    display: none;
+  }
+  
+  .tab_container {
+    width: 98%;
+  }
+}
+
+/*Content Animation*/
+@keyframes fadeInScale {
+  0% {
+  	transform: scale(0.9);
+  	opacity: 0;
+  }
+  
+  100% {
+  	transform: scale(1);
+  	opacity: 1;
+  }
+}
+
+.no_wrap {
+  text-align:center;
+  color: #0ce;
+}
+.link {
+  text-align:center;
+}
+  </style>
+  <!-- priceplan start here -->
+  <!-- priceplan start here -->
+  
+  {% comment %} <h1>Responsive CSS Tabs</h1> {% endcomment %}
+  <div class="tab_container">
+    <input id="tab1" type="radio" name="tabs" checked>
+    <label for="tab1"><i class="fa fa-code"></i><span>Online Writing</span></label>
+
+    <input id="tab2" type="radio" name="tabs">
+    <label for="tab2"><i class="fa fa-pencil-square-o"></i><span>Article Writing </span></label>
+
+    <input id="tab3" type="radio" name="tabs">
+    <label for="tab3"><i class="fa fa-bar-chart-o"></i><span>Blogging</span></label>
+
+    <input id="tab4" type="radio" name="tabs">
+    <label for="tab4"><i class="fa fa-folder-open-o"></i><span>Web Development</span></label>
+
+    <input id="tab5" type="radio" name="tabs">
+    <label for="tab5"><i class="fa fa-envelope-o"></i><span>Web Content</span></label>
+
+    <input id="tab6" type="radio" name="tabs">
+    <label for="tab6"><i class="fa fa-envelope-o"></i><span>Online Skill Training</span></label>
+
+    <input id="tab7" type="radio" name="tabs">
+    <label for="tab7"><i class="fa fa-envelope-o"></i><span>Job Related Services</span></label>
+
+    <section id="content1" class="tab-content">
+      <h3>Online Writing Training</h3>
+      <div class="priceplan">
+    
+        <div class="container">
+          <div class="commontop text-left">
+            
         </div>
-        <div class="col-sm-4 col-md-4 col-md-4 col-xs-12">
-          <div class="box1">
-            <p>FOR MONTH</p>
-            <h4>STANDARD</h4>
-            <div class="matter">
-              $200<span>/per MONTH</span>
+          <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+              <div class="box">
+                <p> Trial Package</p>
+                <h4>STARTER</h4>
+                <div class="matter">
+                  $30<span>for  three days</span>
+                </div>
+                <ul class="list-unstyled">
+                  <li>
+                    <span>01.</span>
+                    Sed Faucibus nisl quis sem
+                  </li>
+                  <li>
+                    <span>02.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                  <li>
+                    <span>03.</span>
+                    Donec et ex eu nibh
+                  </li>
+                  <li>
+                    <span>04.</span>
+                    Donec Consequat ex nec finibus
+                  </li>
+                  <li>
+                    <span>05.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                </ul>
+                <div class="text-center">
+                  <button type="button">Get it now</button>
+                </div>
+              </div>
             </div>
-            <ul class="list-unstyled">
-              <li>
-                <span>01.</span>
-                Sed Faucibus nisl quis sem
-              </li>
-              <li>
-                <span>02.</span>
-                Integer ut felis ut ante egestas
-              </li>
-              <li>
-                <span>03.</span>
-                Donec et ex eu nibh
-              </li>
-              <li>
-                <span>04.</span>
-                Donec Consequat ex nec finibus
-              </li>
-              <li>
-                <span>05.</span>
-                Integer ut felis ut ante egestas
-              </li>
-            </ul>
-            <div class="text-center">
-              <button type="button">Get it now</button>
+            <div class="col-sm-4 col-md-4 col-md-4 col-xs-12">
+              <div class="box1">
+                <p>One Time Payment</p>
+                <h4>STANDARD</h4>
+                <div class="matter">
+                  $100<span></span>
+                </div>
+                <ul class="list-unstyled">
+                  <li>
+                    <span>01.</span>
+                    Sed Faucibus nisl quis sem
+                  </li>
+                  <li>
+                    <span>02.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                  <li>
+                    <span>03.</span>
+                    Donec et ex eu nibh
+                  </li>
+                  <li>
+                    <span>04.</span>
+                    Donec Consequat ex nec finibus
+                  </li>
+                  <li>
+                    <span>05.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                </ul>
+                <div class="text-center">
+                  <button type="button">Get it now</button>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-sm-4 col-md-4 col-md-4 col-xs-12">
-          <div class="box2">
-            <p>FOR YEAR</p>
-            <h4>SUPER</h4>
-            <div class="matter">
-              $1300<span>/per YEAR</span>
-            </div>
-            <ul class="list-unstyled">
-              <li>
-                <span>01.</span>
-                Sed Faucibus nisl quis sem
-              </li>
-              <li>
-                <span>02.</span>
-                Integer ut felis ut ante egestas
-              </li>
-              <li>
-                <span>03.</span>
-                Donec et ex eu nibh
-              </li>
-              <li>
-                <span>04.</span>
-                Donec Consequat ex nec finibus
-              </li>
-              <li>
-                <span>05.</span>
-                Integer ut felis ut ante egestas
-              </li>
-            </ul>
-            <div class="text-center">
-              <button type="button">Get it now</button>
+            <div class="col-sm-4 col-md-4 col-md-4 col-xs-12">
+              <div class="box2">
+                <p> Pro Package</p>
+                <h4>Advanced</h4>
+                <div class="matter">
+                  $1300<span>/per YEAR</span>
+                </div>
+                <ul class="list-unstyled">
+                  <li>
+                    <span>01.</span>
+                    Sed Faucibus nisl quis sem
+                  </li>
+                  <li>
+                    <span>02.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                  <li>
+                    <span>03.</span>
+                    Donec et ex eu nibh
+                  </li>
+                  <li>
+                    <span>04.</span>
+                    Donec Consequat ex nec finibus
+                  </li>
+                  <li>
+                    <span>05.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                </ul>
+                <div class="text-center">
+                  <button type="button">Get it now</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section id="content2" class="tab-content">
+      <h3>Article Writing </h3>
+      <div class="priceplan">
+        <div class="container">
+          
+          <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+              <div class="box">
+                <p>FOR WEEK</p>
+                <h4>STARTER</h4>
+                <div class="matter">
+                  $60<span>/per week</span>
+                </div>
+                <ul class="list-unstyled">
+                  <li>
+                    <span>01.</span>
+                    Sed Faucibus nisl quis sem
+                  </li>
+                  <li>
+                    <span>02.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                  <li>
+                    <span>03.</span>
+                    Donec et ex eu nibh
+                  </li>
+                  <li>
+                    <span>04.</span>
+                    Donec Consequat ex nec finibus
+                  </li>
+                  <li>
+                    <span>05.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                </ul>
+                <div class="text-center">
+                  <button type="button">Get it now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-md-4 col-xs-12">
+              <div class="box1">
+                <p>FOR MONTH</p>
+                <h4>STANDARD</h4>
+                <div class="matter">
+                  $200<span>/per MONTH</span>
+                </div>
+                <ul class="list-unstyled">
+                  <li>
+                    <span>01.</span>
+                    Sed Faucibus nisl quis sem
+                  </li>
+                  <li>
+                    <span>02.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                  <li>
+                    <span>03.</span>
+                    Donec et ex eu nibh
+                  </li>
+                  <li>
+                    <span>04.</span>
+                    Donec Consequat ex nec finibus
+                  </li>
+                  <li>
+                    <span>05.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                </ul>
+                <div class="text-center">
+                  <button type="button">Get it now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-md-4 col-xs-12">
+              <div class="box2">
+                <p>FOR YEAR</p>
+                <h4>SUPER</h4>
+                <div class="matter">
+                  $1300<span>/per YEAR</span>
+                </div>
+                <ul class="list-unstyled">
+                  <li>
+                    <span>01.</span>
+                    Sed Faucibus nisl quis sem
+                  </li>
+                  <li>
+                    <span>02.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                  <li>
+                    <span>03.</span>
+                    Donec et ex eu nibh
+                  </li>
+                  <li>
+                    <span>04.</span>
+                    Donec Consequat ex nec finibus
+                  </li>
+                  <li>
+                    <span>05.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                </ul>
+                <div class="text-center">
+                  <button type="button">Get it now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="content3" class="tab-content">
+      <h3>Blogging</h3>
+      <div class="priceplan">
+        <div class="container">
+          
+          <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+              <div class="box">
+                <p>FOR WEEK</p>
+                <h4>STARTER</h4>
+                <div class="matter">
+                  $60<span>/per week</span>
+                </div>
+                <ul class="list-unstyled">
+                  <li>
+                    <span>01.</span>
+                    Sed Faucibus nisl quis sem
+                  </li>
+                  <li>
+                    <span>02.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                  <li>
+                    <span>03.</span>
+                    Donec et ex eu nibh
+                  </li>
+                  <li>
+                    <span>04.</span>
+                    Donec Consequat ex nec finibus
+                  </li>
+                  <li>
+                    <span>05.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                </ul>
+                <div class="text-center">
+                  <button type="button">Get it now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-md-4 col-xs-12">
+              <div class="box1">
+                <p>FOR MONTH</p>
+                <h4>STANDARD</h4>
+                <div class="matter">
+                  $200<span>/per MONTH</span>
+                </div>
+                <ul class="list-unstyled">
+                  <li>
+                    <span>01.</span>
+                    Sed Faucibus nisl quis sem
+                  </li>
+                  <li>
+                    <span>02.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                  <li>
+                    <span>03.</span>
+                    Donec et ex eu nibh
+                  </li>
+                  <li>
+                    <span>04.</span>
+                    Donec Consequat ex nec finibus
+                  </li>
+                  <li>
+                    <span>05.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                </ul>
+                <div class="text-center">
+                  <button type="button">Get it now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-md-4 col-xs-12">
+              <div class="box2">
+                <p>FOR Advanced</p>
+                <h4>SUPER</h4>
+                <div class="matter">
+                  $1300<span>/per YEAR</span>
+                </div>
+                <ul class="list-unstyled">
+                  <li>
+                    <span>01.</span>
+                    Sed Faucibus nisl quis sem
+                  </li>
+                  <li>
+                    <span>02.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                  <li>
+                    <span>03.</span>
+                    Donec et ex eu nibh
+                  </li>
+                  <li>
+                    <span>04.</span>
+                    Donec Consequat ex nec finibus
+                  </li>
+                  <li>
+                    <span>05.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                </ul>
+                <div class="text-center">
+                  <button type="button">Get it now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="content4" class="tab-content">
+      <h3>Web Development</h3>
+      <div class="priceplan">
+        <div class="container">
+          
+          <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+              <div class="box">
+                <p>FOR WEEK</p>
+                <h4>STARTER</h4>
+                <div class="matter">
+                  $60<span>/per week</span>
+                </div>
+                <ul class="list-unstyled">
+                  <li>
+                    <span>01.</span>
+                    Sed Faucibus nisl quis sem
+                  </li>
+                  <li>
+                    <span>02.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                  <li>
+                    <span>03.</span>
+                    Donec et ex eu nibh
+                  </li>
+                  <li>
+                    <span>04.</span>
+                    Donec Consequat ex nec finibus
+                  </li>
+                  <li>
+                    <span>05.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                </ul>
+                <div class="text-center">
+                  <button type="button">Get it now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-md-4 col-xs-12">
+              <div class="box1">
+                <p>FOR MONTH</p>
+                <h4>STANDARD</h4>
+                <div class="matter">
+                  $200<span>/per MONTH</span>
+                </div>
+                <ul class="list-unstyled">
+                  <li>
+                    <span>01.</span>
+                    Sed Faucibus nisl quis sem
+                  </li>
+                  <li>
+                    <span>02.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                  <li>
+                    <span>03.</span>
+                    Donec et ex eu nibh
+                  </li>
+                  <li>
+                    <span>04.</span>
+                    Donec Consequat ex nec finibus
+                  </li>
+                  <li>
+                    <span>05.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                </ul>
+                <div class="text-center">
+                  <button type="button">Get it now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-md-4 col-xs-12">
+              <div class="box2">
+                <p>FOR YEAR</p>
+                <h4>SUPER</h4>
+                <div class="matter">
+                  $1300<span>/per YEAR</span>
+                </div>
+                <ul class="list-unstyled">
+                  <li>
+                    <span>01.</span>
+                    Sed Faucibus nisl quis sem
+                  </li>
+                  <li>
+                    <span>02.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                  <li>
+                    <span>03.</span>
+                    Donec et ex eu nibh
+                  </li>
+                  <li>
+                    <span>04.</span>
+                    Donec Consequat ex nec finibus
+                  </li>
+                  <li>
+                    <span>05.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                </ul>
+                <div class="text-center">
+                  <button type="button">Get it now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="content5" class="tab-content">
+      <h3>Web Content</h3>
+      <div class="priceplan">
+        <div class="container">
+          
+          <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+              <div class="box">
+                <p>FOR WEEK</p>
+                <h4>STARTER</h4>
+                <div class="matter">
+                  $60<span>/per week</span>
+                </div>
+                <ul class="list-unstyled">
+                  <li>
+                    <span>01.</span>
+                    Sed Faucibus nisl quis sem
+                  </li>
+                  <li>
+                    <span>02.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                  <li>
+                    <span>03.</span>
+                    Donec et ex eu nibh
+                  </li>
+                  <li>
+                    <span>04.</span>
+                    Donec Consequat ex nec finibus
+                  </li>
+                  <li>
+                    <span>05.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                </ul>
+                <div class="text-center">
+                  <button type="button">Get it now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-md-4 col-xs-12">
+              <div class="box1">
+                <p>FOR MONTH</p>
+                <h4>STANDARD</h4>
+                <div class="matter">
+                  $200<span>/per MONTH</span>
+                </div>
+                <ul class="list-unstyled">
+                  <li>
+                    <span>01.</span>
+                    Sed Faucibus nisl quis sem
+                  </li>
+                  <li>
+                    <span>02.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                  <li>
+                    <span>03.</span>
+                    Donec et ex eu nibh
+                  </li>
+                  <li>
+                    <span>04.</span>
+                    Donec Consequat ex nec finibus
+                  </li>
+                  <li>
+                    <span>05.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                </ul>
+                <div class="text-center">
+                  <button type="button">Get it now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-md-4 col-xs-12">
+              <div class="box2">
+                <p>FOR YEAR</p>
+                <h4>SUPER</h4>
+                <div class="matter">
+                  $1300<span>/per YEAR</span>
+                </div>
+                <ul class="list-unstyled">
+                  <li>
+                    <span>01.</span>
+                    Sed Faucibus nisl quis sem
+                  </li>
+                  <li>
+                    <span>02.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                  <li>
+                    <span>03.</span>
+                    Donec et ex eu nibh
+                  </li>
+                  <li>
+                    <span>04.</span>
+                    Donec Consequat ex nec finibus
+                  </li>
+                  <li>
+                    <span>05.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                </ul>
+                <div class="text-center">
+                  <button type="button">Get it now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="content6" class="tab-content">
+      <h3>Online Skill Training</h3>
+      <div class="priceplan">
+        <div class="container">
+          
+          <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+              <div class="box">
+                <p>FOR WEEK</p>
+                <h4>STARTER</h4>
+                <div class="matter">
+                  $60<span>/per week</span>
+                </div>
+                <ul class="list-unstyled">
+                  <li>
+                    <span>01.</span>
+                    Sed Faucibus nisl quis sem
+                  </li>
+                  <li>
+                    <span>02.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                  <li>
+                    <span>03.</span>
+                    Donec et ex eu nibh
+                  </li>
+                  <li>
+                    <span>04.</span>
+                    Donec Consequat ex nec finibus
+                  </li>
+                  <li>
+                    <span>05.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                </ul>
+                <div class="text-center">
+                  <button type="button">Get it now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-md-4 col-xs-12">
+              <div class="box1">
+                <p>FOR MONTH</p>
+                <h4>STANDARD</h4>
+                <div class="matter">
+                  $200<span>/per MONTH</span>
+                </div>
+                <ul class="list-unstyled">
+                  <li>
+                    <span>01.</span>
+                    Sed Faucibus nisl quis sem
+                  </li>
+                  <li>
+                    <span>02.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                  <li>
+                    <span>03.</span>
+                    Donec et ex eu nibh
+                  </li>
+                  <li>
+                    <span>04.</span>
+                    Donec Consequat ex nec finibus
+                  </li>
+                  <li>
+                    <span>05.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                </ul>
+                <div class="text-center">
+                  <button type="button">Get it now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-md-4 col-xs-12">
+              <div class="box2">
+                <p>FOR YEAR</p>
+                <h4>SUPER</h4>
+                <div class="matter">
+                  $1300<span>/per YEAR</span>
+                </div>
+                <ul class="list-unstyled">
+                  <li>
+                    <span>01.</span>
+                    Sed Faucibus nisl quis sem
+                  </li>
+                  <li>
+                    <span>02.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                  <li>
+                    <span>03.</span>
+                    Donec et ex eu nibh
+                  </li>
+                  <li>
+                    <span>04.</span>
+                    Donec Consequat ex nec finibus
+                  </li>
+                  <li>
+                    <span>05.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                </ul>
+                <div class="text-center">
+                  <button type="button">Get it now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="content7" class="tab-content">
+      <h3>Job Related Services</h3>
+      <div class="priceplan">
+        <div class="container">
+          
+          <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+              <div class="box">
+                <p>FOR WEEK</p>
+                <h4>STARTER</h4>
+                <div class="matter">
+                  $60<span>/per week</span>
+                </div>
+                <ul class="list-unstyled">
+                  <li>
+                    <span>01.</span>
+                    Sed Faucibus nisl quis sem
+                  </li>
+                  <li>
+                    <span>02.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                  <li>
+                    <span>03.</span>
+                    Donec et ex eu nibh
+                  </li>
+                  <li>
+                    <span>04.</span>
+                    Donec Consequat ex nec finibus
+                  </li>
+                  <li>
+                    <span>05.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                </ul>
+                <div class="text-center">
+                  <button type="button">Get it now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-md-4 col-xs-12">
+              <div class="box1">
+                <p>FOR MONTH</p>
+                <h4>STANDARD</h4>
+                <div class="matter">
+                  $200<span>/per MONTH</span>
+                </div>
+                <ul class="list-unstyled">
+                  <li>
+                    <span>01.</span>
+                    Sed Faucibus nisl quis sem
+                  </li>
+                  <li>
+                    <span>02.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                  <li>
+                    <span>03.</span>
+                    Donec et ex eu nibh
+                  </li>
+                  <li>
+                    <span>04.</span>
+                    Donec Consequat ex nec finibus
+                  </li>
+                  <li>
+                    <span>05.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                </ul>
+                <div class="text-center">
+                  <button type="button">Get it now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-md-4 col-xs-12">
+              <div class="box2">
+                <p>FOR YEAR</p>
+                <h4>SUPER</h4>
+                <div class="matter">
+                  $1300<span>/per YEAR</span>
+                </div>
+                <ul class="list-unstyled">
+                  <li>
+                    <span>01.</span>
+                    Sed Faucibus nisl quis sem
+                  </li>
+                  <li>
+                    <span>02.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                  <li>
+                    <span>03.</span>
+                    Donec et ex eu nibh
+                  </li>
+                  <li>
+                    <span>04.</span>
+                    Donec Consequat ex nec finibus
+                  </li>
+                  <li>
+                    <span>05.</span>
+                    Integer ut felis ut ante egestas
+                  </li>
+                </ul>
+                <div class="text-center">
+                  <button type="button">Get it now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </div>
+
+<p class="no_wrap">
+And Of-course this paragrapgh with not wrap Tab
+</p>
+
+<p class="link">
+Just in case you want to go through the tutorial follow this link: <a href="http://www.sevensignature.com/blog/code/responsive-pure-css-tabs/">Responsive Pure CSS Tabs</a>
+</p>
+
+
+ 
   <!-- priceplan end here -->
   <!-- newsletter start here -->
   {% include "pages/components/newsletter.html" %}

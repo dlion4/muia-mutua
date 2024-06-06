@@ -30,6 +30,9 @@
                 <li class="nav-item {% if request.resolver_match.view_name == 'pricing' %} active {% endif %}">
                   <a class="nav-link" href="{% url 'pricing' %}">Pricing</a>
                 </li>
+                <li class="nav-item {% if request.resolver_match.view_name == 'product' %} active {% endif %}">
+                  <a class="nav-link" href="{% url 'product' %}">Products</a>
+                </li>
                 <li class="nav-item {% if request.resolver_match.view_name == 'contact' %} active {% endif %}">
                   <a class="nav-link " href="{% url 'contact' %}">contact us</a>
                 </li>

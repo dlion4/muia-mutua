@@ -239,7 +239,7 @@ header .icon #srch .form-group{
 }
 header .icon #srch .form-control{
 	background:#fff;
-	border:1px solid #F4BD01;
+	border:1px solid #fc0;
 	height: 39px;
 	opacity: 0;
     padding: 0 10px;
@@ -258,9 +258,9 @@ header .icon #srch:hover .form-control{
     width: 200px;
 }
 header .icon #srch button{
-	background:#F4BD01;
+	background:#42AD56;
 	padding:10px;
-	border:1px solid #DFAE08;
+	border:1px solid #42AD56;
 	color:#fff;
 	border-radius:4px;
 	line-height:16px;
@@ -272,15 +272,15 @@ header .icon .btn-primary{
 	font-size:15px;
 	font-weight:600;
 	color:#fff;
-	background:#F4BD01;
-	border:1px solid #DFAE08;
+	background:#42AD56;
+	border:1px solid #42AD56;
 	border-radius:4px;
 	text-transform:uppercase;
 	padding:12px 14px;
 	line-height:12px;
 }
 header .icon .btn-primary:active:hover{
-    background:#F4BD01;
+    background:#fc0;
 	border:1px solid #DFAE08;
 }
 /*--------------------------------- 
@@ -318,17 +318,17 @@ header .icon .btn-primary:active:hover{
 }
 .slide-detail .matter h4{
 	font-size:48px;
-	color:#F4BD01;
+	color:#fc0;
 	font-weight:800;
 	margin:0 0 20px;
-	text-transform:uppercase;
+	/* text-transform:uppercase; */
 }
 .slide-detail .matter .des{
 	font-size:14px;
 	font-weight:600;
 	color:#fff;
 	margin: 0;
-	text-transform:uppercase;
+	/* text-transform:uppercase; */
 }
 .slide-detail .matter2{
 	background:rgba(255, 255, 255, 0.38);
@@ -337,7 +337,7 @@ header .icon .btn-primary:active:hover{
 }
 .slide-detail .matter2 h2{
 	font-size:20px;
-	background:#F4BD01;
+	background:#42AD56;
 	color:#fff;
 	font-weight:600;
 	margin:0;
@@ -393,8 +393,8 @@ header .icon .btn-primary:active:hover{
 	min-width: 100%;
 }
 .slide-detail .matter2 form .btn-primary{
-	border:1px solid #DFAE08;
-	background:#F4BD01;
+	border:1px solid #42AD56;
+	background:#42AD56;
 	color:#fff;
 	font-weight:600;
 	font-size:16px;
@@ -442,12 +442,12 @@ header .icon .btn-primary:active:hover{
 }
 .slideshow .owl-nav .owl-prev, .slideshow .owl-nav .owl-next{
 	color: #fff !important;
-	background: #F4BD01 !important;
+	background: #42AD56 !important;
 	padding: 9px 8px !important;
 	border-radius: 4px !important;
 }
 .slideshow .owl-nav .owl-prev:hover, .slideshow .owl-nav .owl-next:hover{
-	background: #DFAE08 !important;
+	background: #42AD56 !important;
 }
 .slideshow .owl-nav .owl-prev i, .slideshow .owl-nav .owl-next i{
 	font-size:30px;
@@ -461,7 +461,7 @@ header .icon .btn-primary:active:hover{
 --------------------------- */
 .commontop h2{
 	margin:50px 0 20px;
-	color:#F4BD01;
+	color:#fc0;
 	text-transform:uppercase;
 	font-size:24px;
 	font-weight:700;
@@ -472,7 +472,7 @@ header .icon .btn-primary:active:hover{
 	color:#686868;
 }
 .commontop hr{
-	border-top:3px solid #F4BD01;
+	border-top:3px solid #fc0;
 	width:50px;
 	margin:0 auto 30px;
 }
@@ -492,7 +492,7 @@ header .icon .btn-primary:active:hover{
 	padding:4px;
 }
 .service .box .icons .icon{
-	background:#DFAE08;
+	background:#42AD56;
 	border-radius:50%;
 	width:100px;
 	height:100px;
@@ -545,7 +545,7 @@ header .icon .btn-primary:active:hover{
 }
 .about .des a, .feature .des a{
 	font-weight:600;
-	color:#F4BD01;
+	color:#fc0;
 	text-transform:uppercase;
 }
 .about .image, .abouts .image{
@@ -563,7 +563,7 @@ header .icon .btn-primary:active:hover{
 	right:0;
 	top:38%;
 	margin:0 auto;
-	border:1px solid #F4BD01;
+	border:1px solid #fc0;
 	border-radius:50%;
 	padding:4px;
 	text-align:center;
@@ -572,7 +572,7 @@ header .icon .btn-primary:active:hover{
 }
 .about .image .ico, .abouts .image .ico{
 	color:#fff;
-	background:#F4BD01;
+	background:#fc0;
 	border-radius:50%;
 	width:70px;
 	height:70px;
@@ -584,7 +584,7 @@ header .icon .btn-primary:active:hover{
 }
 .feature .box{
 	border-radius:4px;
-	background:#F4BD01;
+	background:#fc0;
 	padding:18px 15px;
 	margin-bottom:20px;
 }
@@ -615,7 +615,7 @@ header .icon .btn-primary:active:hover{
 	color:#686868;
 }
 .abouts ul li i{
-	color:#F4BD01;
+	color:#fc0;
 	margin-right:6px;
 }
 .inner .feature .commontop h2 {
@@ -702,7 +702,7 @@ header .icon .btn-primary:active:hover{
 }
 .aboutweek .box button{
 	float:right;
-	background:#F4BD01;
+	background:#fc0;
 	color:#fff;
 	padding:10px 30px;
 	border:none;
@@ -730,7 +730,7 @@ header .icon .btn-primary:active:hover{
 }
 .courses .owl-nav .owl-prev, .courses .owl-nav .owl-next{
 	color: #fff !important;
-	background: #F4BD01 !important;
+	background: #fc0 !important;
 	padding: 9px 8px !important;
 	border-radius: 4px !important;
 	top:-8% !important;
@@ -766,7 +766,7 @@ header .icon .btn-primary:active:hover{
 	line-height:16px;
 }
 .product-thumb .caption h3 .price, .product-thumb .caption h3 .text{
-	color:#F4BD01;
+	color:#fc0;
 	float:right;
 	font-size:24px;
 	font-weight:700;
@@ -815,7 +815,7 @@ header .icon .btn-primary:active:hover{
 }
 .product-thumb .caption ul li:last-child i{
 	font-size:14px;
-	color:#F4BD01;
+	color:#fc0;
 }
 .product-list{
 	padding:0 15px;
@@ -856,7 +856,7 @@ header .icon .btn-primary:active:hover{
 	padding:18px 13px 12px;
 }
 .product-list .caption h5 .price, .product-list .caption h5 .text{
-	color:#F4BD01;
+	color:#fc0;
 	float:right;
 	font-size:24px;
 	font-weight:700;
@@ -946,7 +946,7 @@ header .icon .btn-primary:active:hover{
 .featured .box p{
 	font-size:40px;
 	font-weight:700;
-	color:#F4BD01;
+	color:#fc0;
 	margin:0;
 }
 
@@ -1005,14 +1005,14 @@ header .icon .btn-primary:active:hover{
 	margin:0;
 }
 .blog .box:hover .caption, .blogs .box:hover .caption{
-	border-color:#F4BD01;
+	border-color:#fc0;
 	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.20);
 }
 .blogs .box:hover .caption{
 	box-shadow:none;
 }
 .blog .box:hover .caption::after, .blogs .box:hover .caption::after{
-	border-bottom:2px solid #F4BD01;
+	border-bottom:2px solid #fc0;
 	display: block;
 	content: "";
 	width: 100%;
@@ -1126,8 +1126,8 @@ header .icon .btn-primary:active:hover{
 	border-radius:4px;
 	margin-left:12px;
 	padding:8px 25px;
-	background:#F4BD01;
-	border:1px solid #DFAE08;
+	background:#42AD56;
+	border:1px solid #42AD56;
 	height:40px;
 }
 /*----------------------
@@ -1135,7 +1135,7 @@ header .icon .btn-primary:active:hover{
 ------------------------ */
 footer{
 	background:#000;
-	border-top:5px solid #F4BD01;
+	border-top:5px solid #42AD56;
 }
 footer .inner{
 	padding:50px 0;
@@ -1167,7 +1167,7 @@ footer .inner h5{
 	line-height:16px;
 }
 footer .inner hr{
-	border-top:3px solid #F4BD01;
+	border-top:3px solid #fc0;
 	margin:0 0 30px;
 	width:50px;
 }
@@ -1186,7 +1186,7 @@ footer .inner li a, footer .inner li{
 	line-height:14px;
 }
 footer .inner li a:hover{
-	color:#F4BD01;
+	color:#fc0;
 }
 footer .inner li a i{
 	margin-right:8px;
@@ -1195,7 +1195,7 @@ footer .inner .contact li{
 	line-height:22px;
 }
 footer .inner .contact li  i{
-	color:#F4BD01;
+	color:#fc0;
 	margin-right:7px;
 	float:left;
 	line-height: 24px;
@@ -1221,7 +1221,7 @@ footer .inner .box p{
 footer .inner .box span{
 	font-size:14px;
 	font-weight:600;
-	color:#F4BD01;
+	color:#fc0;
 	margin:0 0 15px;
 }
 footer .inner .box .text{
@@ -1248,7 +1248,7 @@ footer .social li a{
 	font-size:24px;
 }
 footer .social li a:hover i{
-	color:#F4BD01;
+	color:#fc0;
 }
 footer .powered{
 	padding:30px 0;
@@ -1359,11 +1359,11 @@ footer .powered p{
 	margin:0;
 }
 .team .box:hover .caption{
-	border-color:#F4BD01;
+	border-color:#fc0;
 	border-bottom:none;
 }
 .team .box:hover .caption::after{
-	border-bottom:3px solid #F4BD01;
+	border-bottom:3px solid #fc0;
 	display: block;
 	content: "";
 	width: 100%;
@@ -1410,7 +1410,7 @@ footer .powered p{
 }
 .left .search .btn {
     position: absolute;
-    background: #F4BD01;
+    background: #fc0;
     bottom: 0;
     right: 0;
     padding: 8px 9px;
@@ -1457,7 +1457,7 @@ footer .powered p{
 	padding:16px 0;
 	line-height:14px;
 	border:1px solid #DFAE08;
-	background:#F4BD01;
+	background:#fc0;
 	text-align:center;
 	cursor:pointer;
 }
@@ -1471,7 +1471,7 @@ footer .powered p{
 	font-weight:600;
 }
 .left .detail p span{
-	color:#F4BD01;
+	color:#fc0;
 	margin-left:20px;
 }
 .left .detail ul{
@@ -1532,7 +1532,7 @@ footer .powered p{
 .left .popular .box span{
 	font-size:14px;
 	font-weight:600;
-	color:#F4BD01;
+	color:#fc0;
 }
 .left .popular .box .color{
 	color:#2BB6ED;
@@ -1635,7 +1635,7 @@ footer .powered p{
 }
 .sort .list .btn-default:hover{
 	color:#fff;
-	background:#F4BD01;
+	background:#fc0;
 	border:1px solid #DFAE08;
 }
 .sort .list .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
@@ -1655,7 +1655,7 @@ footer .powered p{
 .coures .details h4 span{
 	font-size:24px;
 	font-weight:700;
-	color:#F4BD01;
+	color:#fc0;
 	float:right;
 }
 .coures .details .text{
@@ -1669,7 +1669,7 @@ footer .powered p{
 	display:inline-block;
 }
 .coures .details .text li i{
-	color:#F4BD01;
+	color:#fc0;
 }
 .coures .details .text li span {
 	color:#b2b2b2;
@@ -1698,7 +1698,7 @@ footer .powered p{
 	right:0;
 	top:38%;
 	margin:0 auto;
-	border:1px solid #F4BD01;
+	border:1px solid #fc0;
 	border-radius:50%;
 	padding:4px;
 	text-align:center;
@@ -1712,7 +1712,7 @@ footer .powered p{
 }
 .coures .details .image .ico, .coures .details .image1 .ico{
 	color:#fff;
-	background:#F4BD01;
+	background:#fc0;
 	border-radius:50%;
 	width:70px;
 	height:70px;
@@ -1750,7 +1750,7 @@ footer .powered p{
 	margin:0 0 30px;
 }
 .coures .details .nav-tabs > li:hover a, .coures .details .nav-tabs > li a.active{
-	color:#F4BD01;
+	color:#fc0;
 }
 .coures .details .nav-tabs > li{
 	padding:18px 0;
@@ -1867,7 +1867,7 @@ footer .powered p{
 	font-size:16px;
 	font-weight:600;
 	border-radius:4px;
-	background:#F4BD01;
+	background:#fc0;
 	border:1px solid #DFAE08;	
 	padding:10px 14px;
 	margin:5px 0;
@@ -1912,7 +1912,7 @@ footer .powered p{
 	font-size:16px;
 	font-weight:600;
 	color:#fff;
-	background:#F4BD01;
+	background:#fc0;
 	border:1px solid #DFAE08;
 	padding:10px 14px;
 	border-radius:4px;
@@ -1952,7 +1952,7 @@ footer .powered p{
 	padding:0;
 }
 .coures .details .review .boxes .detail ul li i, .comment .boxes .detail ul li i{
-	color:#F4BD01;
+	color:#fc0;
 }
 .coures .details .review .boxes .detail  h1, .comment .boxes .detail h1{
 	font-weight:600;
@@ -2001,7 +2001,7 @@ footer .powered p{
 	font-size:16px;
 	font-weight:600;
 	color:#fff;
-	background:#F4BD01;
+	background:#fc0;
 	border:1px solid #DFAE08;
 	padding:10px 40px;
 	border-radius:4px;
@@ -2048,12 +2048,12 @@ footer .powered p{
 }
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
     color: #fff;
-    background-color: #F4BD01;
+    background-color: #fc0;
     border-color: #DFAE08;
 }
 .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
     color: #fff;
-    background-color: #F4BD01;
+    background-color: #fc0;
     border-color: #DFAE08;
 }
 /*------------------------- 
@@ -2087,7 +2087,7 @@ footer .powered p{
 	font-size:15px;
 	color:#fff;
 	font-weight:600;
-	background: #F4BD01;
+	background: #fc0;
     border:1px solid #DFAE08;
 	border-radius:4px;
 	padding:12px 16px;
@@ -2123,7 +2123,7 @@ footer .powered p{
 	font-size:16px;
 	font-weight:600;
 	color:#fff;
-	background:#F4BD01;
+	background:#fc0;
 	border:1px solid #DFAE08;
 	border-radius:4px;
 	text-transform:uppercase;
@@ -2170,7 +2170,7 @@ footer .powered p{
 }
 .timer #ctime li {
 	border-radius:4px;
-	border:2px solid #F4BD01;
+	border:2px solid #fc0;
 	height:130px;
 	width:130px;
 	color:#000;
@@ -2209,7 +2209,7 @@ footer .powered p{
 	border-radius:4px;
 	margin-left:10px;
 	padding:8px 30px;
-	background:#F4BD01;
+	background:#fc0;
 	border:1px solid #DFAE08;
 	text-transform:uppercase;
 	height:40px;
@@ -2225,7 +2225,7 @@ footer .powered p{
 	text-align:center;
 }
 .priceplan .box1{
-	border:2px solid #F4BD01;
+	border:2px solid #fc0;
 }
 .priceplan .box2{
 	border:2px solid #05C220;
@@ -2250,7 +2250,7 @@ footer .powered p{
 	padding:15px 0;
 }
 .priceplan .box1 .matter{
-	background:#F4BD01;
+	background:#fc0;
 }
 .priceplan .box2 .matter{
 	background:#05C220;
@@ -2291,7 +2291,7 @@ footer .powered p{
 }
 .priceplan .box1 button{
 	border:1px solid #DFAE08;
-	background:#F4BD01;
+	background:#fc0;
 }
 .priceplan .box2 button{
 	border:1px solid #07971B;
@@ -2311,13 +2311,13 @@ footer .powered p{
 .contactus h5{
 	font-size:24px;
 	font-weight:700;
-	color:#F4BD01;
+	color:#fc0;
 	margin:0 0 24px;
 	text-transform:uppercase;	
 }
 .contactus hr{
 	margin:0 0 50px;
-	border-top:3px solid #F4BD01;
+	border-top:3px solid #fc0;
 	width:50px;
 }
 .contactus form{
@@ -2345,7 +2345,7 @@ footer .powered p{
 }
 .contactus .btn-primary{
 	border:1px solid #DFAE08;
-	background:#F4BD01;
+	background:#fc0;
 	border-radius:4px;
 	font-size:15px;
 	font-weight:600;
@@ -2377,7 +2377,7 @@ footer .powered p{
 	padding:0 0 0px;
 }
 .contactus .address ul li i{
-	color:#F4BD01;
+	color:#fc0;
 	margin-right:8px;
 	float:left;
 	line-height:22px;
@@ -2405,13 +2405,13 @@ footer .powered p{
 .login h5{
 	font-size:24px;
 	font-weight:700;
-	color:#F4BD01;
+	color:#fc0;
 	margin:0 0 24px;
 	text-transform:uppercase;	
 }
 .login hr{
 	margin:0 0 30px;
-	border-top:3px solid #F4BD01;
+	border-top:3px solid #fc0;
 	width:50px;
 }
 .login .form-group{
@@ -2445,7 +2445,7 @@ footer .powered p{
     vertical-align: middle;
 }
 .login .btn-primary{
-	background:#F4BD01;
+	background:#fc0;
 	color:#fff;
 	width:100%;
 	height:50px;
@@ -2590,7 +2590,7 @@ button{
 }
 .blog-detail .bloggs .owl-nav .owl-prev:hover, .blog-detail .bloggs .owl-nav .owl-next:hover{
 	border:1px solid #DFAE08 !important;
-	background:#F4BD01 !important;
+	background:#fc0 !important;
 	color:#fff !important;
 }
 .blog-detail .bloggs .owl-nav .owl-prev i, .blog-detail .bloggs .owl-nav .owl-next i{
@@ -2695,7 +2695,7 @@ button{
 .event .box .caption h4 span b{
 	font-size:24px;
 	font-weight:600;
-	color:#F4BD01;
+	color:#fc0;
 	margin-right:6px;
 }
 .event .box .caption ul{
@@ -2726,7 +2726,7 @@ button{
 	font-weight:400;
 	color:#fff;
 	border:1px solid #DFAE08;
-	background:#F4BD01;
+	background:#fc0;
 	padding:6px 14px;
 	border-radius:4px;
 	text-transform:uppercase;
@@ -2757,7 +2757,7 @@ button{
 .eventview .box  ul li i{
 	float:left;
 	font-size:23px;
-	color:#F4BD01;
+	color:#fc0;
 }
 .eventview .box  ul li .text{
 	margin-left:27px;
@@ -2765,7 +2765,7 @@ button{
 .eventview .box  ul li p{
 	font-size:18px;
 	font-weight:600;
-	color:#F4BD01;
+	color:#fc0;
 	margin:0 0 10px;
 }
 .eventview .box  ul li span{
@@ -2784,7 +2784,7 @@ button{
 	font-weight:600;
 	color:#fff;
 	border:1px solid #DFAE08;
-	background:#F4BD01;
+	background:#fc0;
 	padding:8px 11px;
 	border-radius:4px;
 	margin:0 0 30px;

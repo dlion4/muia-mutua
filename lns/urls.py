@@ -6,5 +6,7 @@ urlpatterns = [
     path("about/", views.LandinAboutView.as_view(), name="about"),
     path("contact-us/", views.LandinContactView.as_view(), name="contact"),
     path("pricing-plans/", views.LandinPricingView.as_view(), name="pricing"),
+    path("product/", views.LandinProductView.as_view(), name="product"),
+    path("payment/", views.LandinPaymentView.as_view(), name="payment"),
     path("frequently-asked-questions/", views.LandinFaqsView.as_view(), name="faqs"),
 ]

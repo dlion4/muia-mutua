@@ -31,6 +31,12 @@ class LandinContactView(FormView):
 class LandinPricingView(TemplateView):
     template_name = "pages/price.html"
 
+class LandinProductView(TemplateView):
+    template_name = "pages/product.html"
+
+class LandinPaymentView(TemplateView):
+    template_name = "pages/payment.html"
+
 
 class LandinFaqsView(TemplateView):
     template_name = "pages/faqs.html"

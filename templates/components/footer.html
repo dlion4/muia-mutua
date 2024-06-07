@@ -2,7 +2,7 @@
 
 <footer>
 
-  <div class="social">
+  {% comment %} <div class="social">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
@@ -32,34 +32,34 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> {% endcomment %}
   <div class="powered">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12">
+        <div class="col-sm-8 col-md-8 col-lg-8 col-xs-12">
           <ul class="list-inline">
             <li class="">
-              <a href="index.html">Home</a>
+              <a href="{% url 'home' %}">Home</a>
             </li>
             <li class="">
-              <a href="">ALL courses</a>
+              <a href="{% url 'about' %}">About us</a>
             </li>
             <li class="">
-              <a href="">ABOUT</a>
+              <a href="{% url 'pricing' %}">Pricing</a>
             </li>
             <li class="">
-              <a href="">Events</a>
+              <a href="{% url 'faqs' %}">FAQs</a>
             </li>
             <li class="">
-              <a href="">blog</a>
+              <a href="{% url 'contact' %}">Contact us</a>
             </li>
             <li class="">
-              <a href="">contact us</a>
+              <a href="{% url 'terms' %}">Terms & Conditions</a>
             </li>
           </ul>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12 text-right">
-          <p>PeterMuia TMD Studio, All Rights Reserved.</p>
+        <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12 text-right">
+          <p>&copy; 2024 Earnkraft Agencies | All Rights Reserved.</p>
         </div>
       </div>
     </div>

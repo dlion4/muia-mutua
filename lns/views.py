@@ -37,6 +37,9 @@ class LandinProductView(TemplateView):
 class LandinPaymentView(TemplateView):
     template_name = "pages/payment.html"
 
+class LandinTermsView(TemplateView):
+    template_name = "pages/terms.html"
+
 
 class LandinFaqsView(TemplateView):
     template_name = "pages/faqs.html"

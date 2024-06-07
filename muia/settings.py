@@ -209,4 +209,6 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 CSRF_TRUSTED_ORIGINS = [
     "https://muia-peter-df34d0fcdbfd.herokuapp.com",
+    "https://earnkraft.com",
+    "https://www.earnkraft.com",
 ]

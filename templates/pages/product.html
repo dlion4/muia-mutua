@@ -74,7 +74,7 @@ Products {% endblock title %} {% block main %}
   }
   
   .btn {
-      background: #49C608;
+      background: #42AD56;
       border-radius: 5px;
       cursor: pointer;
       border: none;
@@ -164,117 +164,538 @@ Products {% endblock title %} {% block main %}
 
 
 <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-<div class="product-grid">
-  <div class="product-item">
-      <div class="product-details">
-          <h1>Title of product</h1>
-          <span class="hint-star star">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-half-o" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
-          </span>
-          <p class="information">" Especially good for container gardening, the Angelonia will keep blooming all summer even if old flowers are removed. Once tall enough to cut, bring them inside and you'll notice a light scent that some say is reminiscent of apples. "</p>
-          <div class="control">
-            <a href="{% url 'payment' %}" class="btn">
-              <span class="price">40090 $</span>
-              <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-              <span class="buy">Buy Now</span> 
-          </a>
-          
-          </div>
-      </div>
-      <div class="product-image">
-          <img src="https://sc01.alicdn.com/kf/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3/200006212/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3.jpg" alt="Omar Dsoky">
-          <div class="info">
-              <h2>The Description</h2>
-              <ul>
-                  <li><strong>feature 1: </strong>Full Sun</li>
-                  <li><strong>feature 2: </strong>Damp</li>
-                  <li><strong>feature 2: </strong>9 - 11</li>
-                 
-                  <li><strong>feature 5: </strong>Mid‑Summer - Mid‑Fall</li>
-                  <li><strong>feature 6: </strong>Tolerates heat</li>
-              </ul>
-          </div>
-      </div>
-  </div>
-  <!-- Repeat .product-item divs for more products -->
-  <div class="product-item">
-      <div class="product-details">
-          <h1>Title of product</h1>
-          <span class="hint-star star">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-half-o" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
-          </span>
-          <p class="information">" Especially good for container gardening, the Angelonia will keep blooming all summer even if old flowers are removed. Once tall enough to cut, bring them inside and you'll notice a light scent that some say is reminiscent of apples. "</p>
-          <div class="control">
-              <button class="btn">
-                  <span class="price">49 $</span>
-                  <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-                  <span class="buy">Buy Now</span>
-              </button>
-          </div>
-      </div>
-      <div class="product-image">
-          <img src="https://sc01.alicdn.com/kf/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3/200006212/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3.jpg" alt="Omar Dsoky">
-          <div class="info">
-              <h2>The Description</h2>
-              <ul>
-                  <li><strong>feature 1: </strong>Full Sun</li>
-                  <li><strong>feature 2: </strong>Damp</li>
-                  <li><strong>feature 2: </strong>9 - 11</li>
-                 
-                  <li><strong>feature 5: </strong>Mid‑Summer - Mid‑Fall</li>
-                  <li><strong>feature 6: </strong>Tolerates heat</li>
-              </ul>
-          </div>
-      </div>
-  </div>
-  <!-- Repeat .product-item divs for more products -->
-  <div class="product-item">
-      <div class="product-details">
-          <h1>Title of product</h1>
-          <span class="hint-star star">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star-half-o" aria-hidden="true"></i>
-              <i class="fa fa-star-o" aria-hidden="true"></i>
-          </span>
-          <p class="information">" Especially good for container gardening, the Angelonia will keep blooming all summer even if old flowers are removed. Once tall enough to cut, bring them inside and you'll notice a light scent that some say is reminiscent of apples. "</p>
-          <div class="control">
-              <button class="btn">
-                  <span class="price">400 $</span>
-                  <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-                  <span class="buy">Buy Now</span>
-              </button>
-          </div>
-      </div>
-      <div class="product-image">
-          <img src="https://sc01.alicdn.com/kf/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3/200006212/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3.jpg" alt="Omar Dsoky">
-          <div class="info">
-              <h2>The Description</h2>
-              <ul>
-                  <li><strong>feature 1: </strong>Full Sun</li>
-                  <li><strong>feature 2: </strong>Damp</li>
-                  <li><strong>feature 2: </strong>9 - 11</li>
-                 
-                  <li><strong>feature 5: </strong>Mid‑Summer - Mid‑Fall</li>
-                  <li><strong>feature 6: </strong>Tolerates heat</li>
-              </ul>
-          </div>
-      </div>
-  </div>
-  <!-- Repeat .product-item divs for more products hereeee -->
+
+
+<style>
+  @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+
+*,
+*:after,
+*:before {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+content: " ";
+display: table;
+}
+
+.clearfix:after {
+clear: both;
+}
+
+{% comment %} body {
+font-family: sans-serif;
+background: #f6f9fa;
+} {% endcomment %}
+
+h1 {
+color: #ccc;
+text-align: center;
+}
+
+a {
+color: #ccc;
+text-decoration: none;
+outline: none;
+}
+
+/*Fun begins*/
+.tab_container {
+width: 90%;
+margin: 0 auto;
+padding-top: 50px;
+position: relative;
+}
+
+input, section {
+clear: both;
+padding-top: 10px;
+display: none;
+}
+
+label {
+font-weight: 300;
+font-size: 14px;
+display: block;
+float: left;
+width: 23%;
+padding: 1.5em;
+color: #757575;
+cursor: pointer;
+text-decoration: none;
+text-align: center;
+background: #f0f0f0;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab6:checked ~ #content6,
+#tab7:checked ~ #content7,
+#tab5:checked ~ #content5 {
+display: block;
+padding: 20px;
+background: #fff;
+color: #999;
+border-bottom: 2px solid #f0f0f0;
+}
+
+.tab_container .tab-content p,
+.tab_container .tab-content h3 {
+-webkit-animation: fadeInScale 0.7s ease-in-out;
+-moz-animation: fadeInScale 0.7s ease-in-out;
+animation: fadeInScale 0.7s ease-in-out;
+}
+.tab_container .tab-content h3  {
+text-align: center;
+}
+
+.tab_container [id^="tab"]:checked + label {
+background: #fff;
+box-shadow: inset 0 3px #0CE;
+}
+
+.tab_container [id^="tab"]:checked + label .fa {
+color: #0CE;
+}
+
+label .fa {
+font-size: 1.3em;
+margin: 0 0.4em 0 0;
+}
+
+/*Media query*/
+@media only screen and (max-width: 900px) {
+label span {
+  display: none;
+}
+
+.tab_container {
+  width: 98%;
+}
+}
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+  label {
+    font-size: 12px;
+    padding: 1em;
+  }
+
+  .tab_container {
+    width: 98%;
+  }
+
+  label span {
+    font-size: 0.8em;
+  }
+}
+
+/*Content Animation*/
+@keyframes fadeInScale {
+0% {
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+100% {
+  transform: scale(1);
+  opacity: 1;
+}
+}
+
+.no_wrap {
+text-align:center;
+color: #0ce;
+}
+.link {
+text-align:center;
+}
+</style>
+<!-- priceplan start here -->
+<!-- priceplan start here -->
+
+{% comment %} <h1>Responsive CSS Tabs</h1> {% endcomment %}
+<div class="tab_container">
+  <input id="tab1" type="radio" name="tabs" checked>
+  <label for="tab1"><span>Online Writing Accounts</span></label>
+
+  <input id="tab2" type="radio" name="tabs">
+  <label for="tab2"></i><span>Jobs </span></label>
+
+  <input id="tab3" type="radio" name="tabs">
+  <label for="tab3"></i><span>All</span></label>
+
   
+
+  <section id="content1" class="tab-content">
+    <h3>Online Writing Accounts</h3>
+    <div class="priceplan">
+      <div class="product-grid">
+        <div class="product-item">
+            <div class="product-details">
+                <h1>Title of product</h1>
+                <span class="hint-star star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </span>
+                <p class="information">" Especially good for container gardening, the Angelonia will keep blooming all summer even if old flowers are removed. Once tall enough to cut, bring them inside and you'll notice a light scent that some say is reminiscent of apples. "</p>
+                <div class="control">
+                  <a href="{% url 'payment' %}" class="btn">
+                    <span class="price">$ 40090</span>
+                    <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                    <span class="buy">Buy Now</span> 
+                </a>
+                
+                </div>
+            </div>
+            <div class="product-image">
+                <img src="https://sc01.alicdn.com/kf/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3/200006212/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3.jpg" alt="Omar Dsoky">
+                <div class="info">
+                    <h2>The Description</h2>
+                    <ul>
+                        <li><strong>feature 1: </strong>Full Sun</li>
+                        <li><strong>feature 2: </strong>Damp</li>
+                        <li><strong>feature 2: </strong>9 - 11</li>
+                       
+                        <li><strong>feature 5: </strong>Mid‑Summer - Mid‑Fall</li>
+                        <li><strong>feature 6: </strong>Tolerates heat</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat .product-item divs for more products -->
+        <div class="product-item">
+            <div class="product-details">
+                <h1>Title of product</h1>
+                <span class="hint-star star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </span>
+                <p class="information">" Especially good for container gardening, the Angelonia will keep blooming all summer even if old flowers are removed. Once tall enough to cut, bring them inside and you'll notice a light scent that some say is reminiscent of apples. "</p>
+                <div class="control">
+                    <button class="btn">
+                        <span class="price">49 $</span>
+                        <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                        <span class="buy">Buy Now</span>
+                    </button>
+                </div>
+            </div>
+            <div class="product-image">
+                <img src="https://sc01.alicdn.com/kf/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3/200006212/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3.jpg" alt="Omar Dsoky">
+                <div class="info">
+                    <h2>The Description</h2>
+                    <ul>
+                        <li><strong>feature 1: </strong>Full Sun</li>
+                        <li><strong>feature 2: </strong>Damp</li>
+                        <li><strong>feature 2: </strong>9 - 11</li>
+                       
+                        <li><strong>feature 5: </strong>Mid‑Summer - Mid‑Fall</li>
+                        <li><strong>feature 6: </strong>Tolerates heat</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat .product-item divs for more products -->
+        <div class="product-item">
+            <div class="product-details">
+                <h1>Title of product</h1>
+                <span class="hint-star star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </span>
+                <p class="information">" Especially good for container gardening, the Angelonia will keep blooming all summer even if old flowers are removed. Once tall enough to cut, bring them inside and you'll notice a light scent that some say is reminiscent of apples. "</p>
+                <div class="control">
+                    <button class="btn">
+                        <span class="price">400 $</span>
+                        <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                        <span class="buy">Buy Now</span>
+                    </button>
+                </div>
+            </div>
+            <div class="product-image">
+                <img src="https://sc01.alicdn.com/kf/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3/200006212/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3.jpg" alt="Omar Dsoky">
+                <div class="info">
+                    <h2>The Description</h2>
+                    <ul>
+                        <li><strong>feature 1: </strong>Full Sun</li>
+                        <li><strong>feature 2: </strong>Damp</li>
+                        <li><strong>feature 2: </strong>9 - 11</li>
+                       
+                        <li><strong>feature 5: </strong>Mid‑Summer - Mid‑Fall</li>
+                        <li><strong>feature 6: </strong>Tolerates heat</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat .product-item divs for more products hereeee -->
+        
+        
+        <!-- Repeat .product-item divs for more products -->
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="content2" class="tab-content">
+    <h3>jobs </h3>
+    <div class="priceplan">
+      <div class="product-grid">
+        <div class="product-item">
+            <div class="product-details">
+                <h1>Title of product</h1>
+                <span class="hint-star star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </span>
+                <p class="information">" Especially good for container gardening, the Angelonia will keep blooming all summer even if old flowers are removed. Once tall enough to cut, bring them inside and you'll notice a light scent that some say is reminiscent of apples. "</p>
+                <div class="control">
+                  <a href="{% url 'payment' %}" class="btn">
+                    <span class="price">$ 40090</span>
+                    <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                    <span class="buy">Buy Now</span> 
+                </a>
+                
+                </div>
+            </div>
+            <div class="product-image">
+                <img src="https://sc01.alicdn.com/kf/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3/200006212/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3.jpg" alt="Omar Dsoky">
+                <div class="info">
+                    <h2>The Description</h2>
+                    <ul>
+                        <li><strong>feature 1: </strong>Full Sun</li>
+                        <li><strong>feature 2: </strong>Damp</li>
+                        <li><strong>feature 2: </strong>9 - 11</li>
+                       
+                        <li><strong>feature 5: </strong>Mid‑Summer - Mid‑Fall</li>
+                        <li><strong>feature 6: </strong>Tolerates heat</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat .product-item divs for more products -->
+        <div class="product-item">
+            <div class="product-details">
+                <h1>Title of product</h1>
+                <span class="hint-star star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </span>
+                <p class="information">" Especially good for container gardening, the Angelonia will keep blooming all summer even if old flowers are removed. Once tall enough to cut, bring them inside and you'll notice a light scent that some say is reminiscent of apples. "</p>
+                <div class="control">
+                    <button class="btn">
+                        <span class="price">49 $</span>
+                        <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                        <span class="buy">Buy Now</span>
+                    </button>
+                </div>
+            </div>
+            <div class="product-image">
+                <img src="https://sc01.alicdn.com/kf/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3/200006212/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3.jpg" alt="Omar Dsoky">
+                <div class="info">
+                    <h2>The Description</h2>
+                    <ul>
+                        <li><strong>feature 1: </strong>Full Sun</li>
+                        <li><strong>feature 2: </strong>Damp</li>
+                        <li><strong>feature 2: </strong>9 - 11</li>
+                       
+                        <li><strong>feature 5: </strong>Mid‑Summer - Mid‑Fall</li>
+                        <li><strong>feature 6: </strong>Tolerates heat</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat .product-item divs for more products -->
+        <div class="product-item">
+            <div class="product-details">
+                <h1>Title of product</h1>
+                <span class="hint-star star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </span>
+                <p class="information">" Especially good for container gardening, the Angelonia will keep blooming all summer even if old flowers are removed. Once tall enough to cut, bring them inside and you'll notice a light scent that some say is reminiscent of apples. "</p>
+                <div class="control">
+                    <button class="btn">
+                        <span class="price">400 $</span>
+                        <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                        <span class="buy">Buy Now</span>
+                    </button>
+                </div>
+            </div>
+            <div class="product-image">
+                <img src="https://sc01.alicdn.com/kf/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3/200006212/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3.jpg" alt="Omar Dsoky">
+                <div class="info">
+                    <h2>The Description</h2>
+                    <ul>
+                        <li><strong>feature 1: </strong>Full Sun</li>
+                        <li><strong>feature 2: </strong>Damp</li>
+                        <li><strong>feature 2: </strong>9 - 11</li>
+                       
+                        <li><strong>feature 5: </strong>Mid‑Summer - Mid‑Fall</li>
+                        <li><strong>feature 6: </strong>Tolerates heat</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat .product-item divs for more products hereeee -->
+        
+        
+        <!-- Repeat .product-item divs for more products -->
+      </div>
+    </div>
+  </section>
+
+  <section id="content3" class="tab-content">
+    <h3>All</h3>
+    <div class="priceplan">
+      <div class="product-grid">
+        <div class="product-item">
+            <div class="product-details">
+                <h1>Title of product</h1>
+                <span class="hint-star star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </span>
+                <p class="information">" Especially good for container gardening, the Angelonia will keep blooming all summer even if old flowers are removed. Once tall enough to cut, bring them inside and you'll notice a light scent that some say is reminiscent of apples. "</p>
+                <div class="control">
+                  <a href="{% url 'payment' %}" class="btn">
+                    <span class="price">$ 40090</span>
+                    <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                    <span class="buy">Buy Now</span> 
+                </a>
+                
+                </div>
+            </div>
+            <div class="product-image">
+                <img src="https://sc01.alicdn.com/kf/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3/200006212/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3.jpg" alt="Omar Dsoky">
+                <div class="info">
+                    <h2>The Description</h2>
+                    <ul>
+                        <li><strong>feature 1: </strong>Full Sun</li>
+                        <li><strong>feature 2: </strong>Damp</li>
+                        <li><strong>feature 2: </strong>9 - 11</li>
+                       
+                        <li><strong>feature 5: </strong>Mid‑Summer - Mid‑Fall</li>
+                        <li><strong>feature 6: </strong>Tolerates heat</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat .product-item divs for more products -->
+        <div class="product-item">
+            <div class="product-details">
+                <h1>Title of product</h1>
+                <span class="hint-star star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </span>
+                <p class="information">" Especially good for container gardening, the Angelonia will keep blooming all summer even if old flowers are removed. Once tall enough to cut, bring them inside and you'll notice a light scent that some say is reminiscent of apples. "</p>
+                <div class="control">
+                    <button class="btn">
+                        <span class="price">49 $</span>
+                        <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                        <span class="buy">Buy Now</span>
+                    </button>
+                </div>
+            </div>
+            <div class="product-image">
+                <img src="https://sc01.alicdn.com/kf/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3/200006212/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3.jpg" alt="Omar Dsoky">
+                <div class="info">
+                    <h2>The Description</h2>
+                    <ul>
+                        <li><strong>feature 1: </strong>Full Sun</li>
+                        <li><strong>feature 2: </strong>Damp</li>
+                        <li><strong>feature 2: </strong>9 - 11</li>
+                       
+                        <li><strong>feature 5: </strong>Mid‑Summer - Mid‑Fall</li>
+                        <li><strong>feature 6: </strong>Tolerates heat</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat .product-item divs for more products -->
+        <div class="product-item">
+            <div class="product-details">
+                <h1>Title of product</h1>
+                <span class="hint-star star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </span>
+                <p class="information">" Especially good for container gardening, the Angelonia will keep blooming all summer even if old flowers are removed. Once tall enough to cut, bring them inside and you'll notice a light scent that some say is reminiscent of apples. "</p>
+                <div class="control">
+                    <button class="btn">
+                        <span class="price">400 $</span>
+                        <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                        <span class="buy">Buy Now</span>
+                    </button>
+                </div>
+            </div>
+            <div class="product-image">
+                <img src="https://sc01.alicdn.com/kf/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3/200006212/HTB1Cic9HFXXXXbZXpXXq6xXFXXX3.jpg" alt="Omar Dsoky">
+                <div class="info">
+                    <h2>The Description</h2>
+                    <ul>
+                        <li><strong>feature 1: </strong>Full Sun</li>
+                        <li><strong>feature 2: </strong>Damp</li>
+                        <li><strong>feature 2: </strong>9 - 11</li>
+                       
+                        <li><strong>feature 5: </strong>Mid‑Summer - Mid‑Fall</li>
+                        <li><strong>feature 6: </strong>Tolerates heat</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat .product-item divs for more products hereeee -->
+        
+        
+        <!-- Repeat .product-item divs for more products -->
+      </div>
+    </div>
+  </section>
+
+
   
-  <!-- Repeat .product-item divs for more products -->
+
+  
+
 </div>
+
+
+<!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+<!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+
 
   
   

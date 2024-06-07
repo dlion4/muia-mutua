@@ -702,7 +702,7 @@ header .icon .btn-primary:active:hover{
 }
 .aboutweek .box button{
 	float:right;
-	background:#fc0;
+	background:#42AD56;
 	color:#fff;
 	padding:10px 30px;
 	border:none;
@@ -2344,8 +2344,8 @@ footer .powered p{
 	height:150px ;
 }
 .contactus .btn-primary{
-	border:1px solid #DFAE08;
-	background:#fc0;
+	border:1px solid #42AD56;
+	background:#42AD56;
 	border-radius:4px;
 	font-size:15px;
 	font-weight:600;

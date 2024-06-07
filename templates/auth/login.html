@@ -8,6 +8,17 @@
   <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12">
     <h5>sign in</h5>
     <hr>
+
+ {% if messages %}
+
+ {% for message in messages %}
+        <div class="alert alert-{{message.tags}}">
+          <strong>{{message.tags|title}}!</strong>
+          {{message}}.
+        </div>
+        {% endfor %}
+      {% endif %}
+
     <form method="post" action="{% url 'login' %}" enctype="multipart/form-data">
       {% if form.errors %}
         <div class="alert alert-danger">
@@ -15,6 +26,8 @@
           Your username and password didn't match. Please try again.
         </div>
       {% endif %}
+
+
 
       {% csrf_token %}
       <div class="form-group">

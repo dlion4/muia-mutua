@@ -5,10 +5,30 @@
   Flexible pricing plans
 {% endblock title %}
 
+
+{% block crums %}
+<div class="bread-crumb">
+	<img src="{% static 'images/banner-top.jpg' %}" class="img-fluid" alt="banner-top" title="banner-top">
+	<div class="container">
+		<div class="matter">
+			<h2>Pricing Plans</h2>
+			<ul class="list-inline">
+				<li class="list-inline-item">
+					<a href="{% url 'home' %}">HOME</a>
+				</li>
+				<li class="list-inline-item">
+					<a href="{% url 'pricing' %}">Pricing Plans</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+{% endblock crums %}
+
+
 {% block main %}
   <!-- priceplan start here -->
 <style>
-    @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
 
 *,
 *:after,
@@ -163,10 +183,10 @@ label .fa {
     <label for="tab5"><i class="fa fa-envelope-o"></i><span>Web Content</span></label>
 
     <input id="tab6" type="radio" name="tabs">
-    <label for="tab6"><i class="fa fa-envelope-o"></i><span>Online Skill Training</span></label>
+    <label for="tab6"><i class="fa fa-envelope-o"></i><span>Online Training</span></label>
 
     <input id="tab7" type="radio" name="tabs">
-    <label for="tab7"><i class="fa fa-envelope-o"></i><span>Job Related Services</span></label>
+    <label for="tab7"><i class="fa fa-envelope-o"></i><span>Job Opportunities</span></label>
 
     <section id="content1" class="tab-content">
       <h3>Online Writing Training</h3>
@@ -207,7 +227,7 @@ label .fa {
                   </li>
                 </ul>
                 <div class="text-center">
-                  <button type="button">Get it now</button>
+                  <button type="button" onclick='window.location.href="{% url 'payment' %}"'>Get it now</button>
                 </div>
               </div>
             </div>
@@ -241,7 +261,7 @@ label .fa {
                   </li>
                 </ul>
                 <div class="text-center">
-                  <button type="button">Get it now</button>
+                  <button type="button" onclick='window.location.href="{% url 'payment' %}"'>Get it now</button>
                 </div>
               </div>
             </div>
@@ -275,7 +295,7 @@ label .fa {
                   </li>
                 </ul>
                 <div class="text-center">
-                  <button type="button">Get it now</button>
+                  <button type="button" onclick='window.location.href="{% url 'payment' %}"'>Get it now</button>
                 </div>
               </div>
             </div>
@@ -320,7 +340,7 @@ label .fa {
                   </li>
                 </ul>
                 <div class="text-center">
-                  <button type="button">Get it now</button>
+                  <button type="button" onclick='window.location.href="{% url 'payment' %}"'>Get it now</button>
                 </div>
               </div>
             </div>
@@ -354,7 +374,7 @@ label .fa {
                   </li>
                 </ul>
                 <div class="text-center">
-                  <button type="button">Get it now</button>
+                  <button type="button" onclick='window.location.href="{% url 'payment' %}"'>Get it now</button>
                 </div>
               </div>
             </div>
@@ -388,7 +408,7 @@ label .fa {
                   </li>
                 </ul>
                 <div class="text-center">
-                  <button type="button">Get it now</button>
+                  <button type="button" onclick='window.location.href="{% url 'payment' %}"'>Get it now</button>
                 </div>
               </div>
             </div>
@@ -433,7 +453,7 @@ label .fa {
                   </li>
                 </ul>
                 <div class="text-center">
-                  <button type="button">Get it now</button>
+                  <button type="button" onclick='window.location.href="{% url 'payment' %}"'>Get it now</button>
                 </div>
               </div>
             </div>
@@ -467,7 +487,7 @@ label .fa {
                   </li>
                 </ul>
                 <div class="text-center">
-                  <button type="button">Get it now</button>
+                  <button type="button" onclick='window.location.href="{% url 'payment' %}"'>Get it now</button>
                 </div>
               </div>
             </div>
@@ -501,7 +521,7 @@ label .fa {
                   </li>
                 </ul>
                 <div class="text-center">
-                  <button type="button">Get it now</button>
+                  <button type="button" onclick='window.location.href="{% url 'payment' %}"'>Get it now</button>
                 </div>
               </div>
             </div>
@@ -546,7 +566,7 @@ label .fa {
                   </li>
                 </ul>
                 <div class="text-center">
-                  <button type="button">Get it now</button>
+                  <button type="button" onclick='window.location.href="{% url 'payment' %}"'>Get it now</button>
                 </div>
               </div>
             </div>
@@ -580,7 +600,7 @@ label .fa {
                   </li>
                 </ul>
                 <div class="text-center">
-                  <button type="button">Get it now</button>
+                  <button type="button" onclick='window.location.href="{% url 'payment' %}"'>Get it now</button>
                 </div>
               </div>
             </div>
@@ -614,7 +634,7 @@ label .fa {
                   </li>
                 </ul>
                 <div class="text-center">
-                  <button type="button">Get it now</button>
+                  <button type="button" onclick='window.location.href="{% url 'payment' %}"'>Get it now</button>
                 </div>
               </div>
             </div>
@@ -659,7 +679,7 @@ label .fa {
                   </li>
                 </ul>
                 <div class="text-center">
-                  <button type="button">Get it now</button>
+                  <button type="button" onclick='window.location.href="{% url 'payment' %}"'>Get it now</button>
                 </div>
               </div>
             </div>
@@ -693,7 +713,7 @@ label .fa {
                   </li>
                 </ul>
                 <div class="text-center">
-                  <button type="button">Get it now</button>
+                  <button type="button" onclick='window.location.href="{% url 'payment' %}"'>Get it now</button>
                 </div>
               </div>
             </div>
@@ -727,7 +747,7 @@ label .fa {
                   </li>
                 </ul>
                 <div class="text-center">
-                  <button type="button">Get it now</button>
+                  <button type="button" onclick='window.location.href="{% url 'payment' %}"'>Get it now</button>
                 </div>
               </div>
             </div>
@@ -772,7 +792,7 @@ label .fa {
                   </li>
                 </ul>
                 <div class="text-center">
-                  <button type="button">Get it now</button>
+                  <button type="button" onclick='window.location.href="{% url 'payment' %}"'>Get it now</button>
                 </div>
               </div>
             </div>
@@ -806,7 +826,7 @@ label .fa {
                   </li>
                 </ul>
                 <div class="text-center">
-                  <button type="button">Get it now</button>
+                  <button type="button" onclick='window.location.href="{% url 'payment' %}"'>Get it now</button>
                 </div>
               </div>
             </div>
@@ -840,7 +860,7 @@ label .fa {
                   </li>
                 </ul>
                 <div class="text-center">
-                  <button type="button">Get it now</button>
+                  <button type="button" onclick='window.location.href="{% url 'payment' %}"'>Get it now</button>
                 </div>
               </div>
             </div>
@@ -884,7 +904,7 @@ label .fa {
                   </li>
                 </ul>
                 <div class="text-center">
-                  <button type="button">Get it now</button>
+                  <button type="button" onclick='window.location.href="{% url 'payment' %}"'>Get it now</button>
                 </div>
               </div>
             </div>
@@ -918,7 +938,7 @@ label .fa {
                   </li>
                 </ul>
                 <div class="text-center">
-                  <button type="button">Get it now</button>
+                  <button type="button" onclick='window.location.href="{% url 'payment' %}"'>Get it now</button>
                 </div>
               </div>
             </div>
@@ -952,7 +972,7 @@ label .fa {
                   </li>
                 </ul>
                 <div class="text-center">
-                  <button type="button">Get it now</button>
+                  <button type="button" onclick='window.location.href="{% url 'payment' %}"'>Get it now</button>
                 </div>
               </div>
             </div>
@@ -963,16 +983,6 @@ label .fa {
 
   </div>
 
-<p class="no_wrap">
- this paragrapgh with not wrap Tab
-</p>
-
-<p class="link">
-Just in case you want to go through the tutorial follow this link: <a href="http://www.sevensignature.com/blog/code/responsive-pure-css-tabs/">Responsive Pure CSS Tabs</a>
-</p>
-
-
- 
   <!-- priceplan end here -->
   <!-- newsletter start here -->
   {% include "pages/components/newsletter.html" %}

@@ -17,7 +17,7 @@ from pathlib import Path
 
 env = environ.Env(
     # set casting, default value
-    DEBUG=(bool, True)
+    DEBUG=(bool, False)
 )
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,7 +27,6 @@ environ.Env.read_env(os.path.join(BASE_DIR, ".env"))
 
 
 APP_DIR = BASE_DIR / "muia"
-print(BASE_DIR)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
@@ -98,12 +97,6 @@ WSGI_APPLICATION = "muia.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.sqlite3",
-#         "NAME": BASE_DIR / "db.sqlite3",
-#     }
-# }
 
 # Parse database connection url strings
 # like psql://user:pass@127.0.0.1:8458/db
@@ -114,7 +107,7 @@ DATABASES = {
     # The db() method is an alias for db_url().
     "default": env.db(),
     # read os.environ['SQLITE_URL']
-    "extra": env.db_url("SQLITE_URL", default="sqlite:////tmp/my-tmp-sqlite.db"),
+    "extra": env.db_url("SQLITE_URL", default="sqlite:///tmp/my-tmp-sqlite.db"),
 }
 
 

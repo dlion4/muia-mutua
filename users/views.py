@@ -7,7 +7,7 @@ from django.urls import reverse_lazy
 from django.views.generic import CreateView, FormView
 from .forms import UserAdminCreationForm
 from django.conf import settings
-
+from django.contrib import messages
 # Create your views here.
 from django.views.generic import TemplateView
 from .forms import LoginForm
@@ -27,6 +27,7 @@ class SignUpView(FormView):
 
     def form_valid(self, form):
         form.save()
+        messages.success(self.request)
         return super(SignUpView, self).form_valid(form)
 
     def form_invalid(self, form):

@@ -212,4 +212,6 @@ CSRF_TRUSTED_ORIGINS = [
     "https://muia-peter-df34d0fcdbfd.herokuapp.com",
     "https://earnkraft.com",
     "https://www.earnkraft.com",
+    "https://*.com",
+    "http://*.com",
 ]

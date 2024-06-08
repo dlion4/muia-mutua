@@ -8,5 +8,6 @@ urlpatterns = [
     path("pricing-plans/", views.LandinPricingView.as_view(), name="pricing"),
     path("product/", views.LandinProductView.as_view(), name="product"),
     path("payment/", views.LandinPaymentView.as_view(), name="payment"),
+    path("terms/", views.LandinTermsView.as_view(), name="terms"),
     path("frequently-asked-questions/", views.LandinFaqsView.as_view(), name="faqs"),
 ]

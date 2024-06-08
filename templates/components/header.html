@@ -46,11 +46,12 @@
         <ul class="list-inline icon float-end">
           <li class="list-inline-item">
             <form class="form-horizontal" method="post" id="srch">
+              {% csrf_token %}
               <fieldset>
                 <div class="form-group">
                   <input name="search" value="" class="form-control" placeholder="Search" type="text">
                 </div>
-                <button type="submit" value="submit" class="btn">
+                <button type="button" value="submit" class="btn">
                   <i class="icofont icofont-search"></i>
                 </button>
               </fieldset>

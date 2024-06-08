@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView, FormView
 from .models import Contact
-from .froms import ContactForm
+from .forms import ContactForm
 from django.contrib import messages
 
 

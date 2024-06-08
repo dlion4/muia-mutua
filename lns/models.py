@@ -20,3 +20,16 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Subscription(models.Model):
+    email = models.EmailField(max_length=255, unique=True)
+    is_subscribed = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+
+    def __str__(self):
+        return self.email
+    
+    

@@ -16,6 +16,12 @@ class SubscriptionForm(forms.ModelForm):
         model = Subscription
         fields = ["email"]
 
+        widgets = {
+            "email": forms.EmailInput(attrs={
+                "class":"form-control","id":"subscribe_email", "placeholder":"Type your e-mail..."
+            })	
+        }
+
     def clean_email(self):
         email = self.cleaned_data.get("email")
         if Subscription.objects.filter(email=email).exists():

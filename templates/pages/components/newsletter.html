@@ -4,14 +4,17 @@
   <div class="container">
     <div class="row">
       <div id="subscribe">
-        <form class="form-horizontal" name="subscribe">
+        <form class="form-horizontal" name="subscribe" id='subscriptionForm' method="post">
+          {% csrf_token %}
+         <div class="pb-3" id="response"></div>
           <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
-            <p class="news">SUBSCribe to our
+            <p class="news">Subscribe to our
               <span>newsletter</span></p>
           </div>
+            
           <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12 form-group">
             <div class="input-group d-flex align-items-center flex-col justify-content-center">
-              <input class="form-control" value="" name="subscribe_email" id="subscribe_email" required placeholder="Type your e-mail..." type="email">
+              {{subscription_form.email}}
               <button class="btn btn-news" type="submit" value="submit">Submit</button>
             </div>
           </div>
@@ -20,3 +23,49 @@
     </div>
   </div>
 </div>
+
+
+<script>
+
+  const subscriptionForm = document.getElementById('subscriptionForm');
+
+  const message = document.getElementById("response")
+
+  subscriptionForm.addEventListener("submit", async (e)=>{
+    e.preventDefault();
+
+    let email = document.getElementById('subscribe_email');
+    const csrf = document.getElementsByName('csrfmiddlewaretoken')[0].value;
+
+    const data = {
+      'email': email.value,
+    }
+
+    const response = await fetch('/subscribe/', {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRFToken': csrf,
+      }
+    })
+
+
+    const dataResponse = await response.json()
+
+    email.value = ""
+
+
+    if(!dataResponse.success){
+      message.innerHTML = `<span class='text-danger'>${dataResponse.message}</span>`
+
+      return false;
+    }
+
+    message.innerHTML = `<span class='text-success'>${dataResponse.message}</span>`
+
+ 
+
+
+  })
+</script>

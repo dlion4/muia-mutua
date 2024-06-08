@@ -3,7 +3,10 @@ from django.views.generic import TemplateView, FormView
 from .models import Contact
 from .forms import ContactForm
 from django.contrib import messages
-
+import json
+from django.views.generic import View
+from django.http import JsonResponse
+from .forms import SubscriptionForm
 
 class LandinHomeView(TemplateView):
     template_name = "pages/home.html"
@@ -43,3 +46,21 @@ class LandinTermsView(TemplateView):
 
 class LandinFaqsView(TemplateView):
     template_name = "pages/faqs.html"
+
+
+
+class SubscriptionView(View):
+    form_class = SubscriptionForm
+    message = ''
+    def post(self, request, *args, **kwargs):
+        data = json.loads(request.body)
+        form = self.form_class(data=data)
+
+        if form.is_valid():
+            form.save()
+            self.message = "Subscription Submitted successfully"
+            return JsonResponse({"success": True, "message":self.message})
+        
+        self.message = json.loads(json.dumps(form.errors))['email'][0]
+        return JsonResponse({"success": False, "message":self.message})
+

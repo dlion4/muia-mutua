@@ -5,6 +5,7 @@ urlpatterns = [
     path("", views.LandinHomeView.as_view(), name="home"),
     path("about/", views.LandinAboutView.as_view(), name="about"),
     path("contact-us/", views.LandinContactView.as_view(), name="contact"),
+    path("subscribe/", views.SubscriptionView.as_view(), name="subscribe"),
     path("pricing-plans/", views.LandinPricingView.as_view(), name="pricing"),
     path("product/", views.LandinProductView.as_view(), name="product"),
     path("payment/", views.LandinPaymentView.as_view(), name="payment"),

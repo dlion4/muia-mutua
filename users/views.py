@@ -27,7 +27,7 @@ class SignUpView(FormView):
 
     def form_valid(self, form):
         form.save()
-        messages.success(self.request)
+        messages.success(self.request, "Account creation successful")
         return super(SignUpView, self).form_valid(form)
 
     def form_invalid(self, form):

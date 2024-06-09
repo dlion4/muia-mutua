@@ -100,18 +100,11 @@ WSGI_APPLICATION = "muia.wsgi.application"
 
 
 # Parse database connection url strings
-# like psql://user:pass@127.0.0.1:8458/db
-DATABASES = {
-    # read os.environ['DATABASE_URL'] and raises
-    # ImproperlyConfigured exception if not found
-    #
-    # The db() method is an alias for db_url().
-    "default": env.db(),
-    # read os.environ['SQLITE_URL']
-    "extra": env.db_url("SQLITE_URL", default="sqlite:///tmp/my-tmp-sqlite.db"),
-}
-
-
+# DATABASES
+# ------------------------------------------------------------------------------
+# https://docs.djangoproject.com/en/dev/ref/settings/#databases
+DATABASES = {"default": env.db("DATABASE_URL", )}
+DATABASES["default"]["ATOMIC_REQUESTS"] = True
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
